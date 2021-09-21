@@ -466,7 +466,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 - Crea una carpeta nueva.
 - Mueve el fichero a la carpeta recién creada.
 - Crea un fichero .py.
-- Edita el fichero para que muestre tu nombre por pantalla.
+- Edita el fichero para que muestre tu nombre por pantalla, para ello usa nano.
 - Ejecuta el programa.
 - Elimina todo lo creado.
 
@@ -477,7 +477,6 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 - Conectate a la máquina EC2 mediante SSH.
 
 ---
-
 
 # Ejercicio III
 - Transfiere el fichero de market data de tu ordenador a la máquina de EC2.

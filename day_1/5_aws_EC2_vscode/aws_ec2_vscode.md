@@ -11,13 +11,9 @@ img[alt~="center"] {
 }
 </style>
 
-# Introducción
 
----
+# Conenctar vscode a maquínas EC2
 
+--- 
 
-
-
-
-https://docs.aws.amazon.com/index.html
 
