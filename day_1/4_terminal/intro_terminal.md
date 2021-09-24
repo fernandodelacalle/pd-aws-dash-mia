@@ -448,6 +448,14 @@ La conexión se puede cerrar con ```ctrl + x``` o el comando ```exit```
 
 ---
 
+
+Puede ser necesario tener que dar permisos al fichero .pem si estas en Linux o Win. Aparece el error: WARNING: UNPROTECTED PRIVATE KEY FILE! 
+Para solventarlo hacer:
+```bash
+sudo chmod 600 /path/to/my/key.pem
+```
+---
+
 ## 14. Trasferencia de archivos con SCP.
 - Podemos transferir ficheros de nuestra máquina a la máquina EC2 con el comando SCP:
 ```bash

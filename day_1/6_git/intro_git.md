@@ -70,16 +70,25 @@ Reproducibility:
 ---
 ## Demo:
 
-Realizamos juntos los siguientes pasos:
 1. Crear una cuenta en github: https://github.com/
 3. Creamos un repositorio donde pondremos el código del ejercico del algoritmo.
 4. Pulsamos el icono de git en vscode. Nos pedira autentificarnos en Github.
-5. Clonamos nuestro repositorio.
+---
 
---
+5. Clonamos nuestro repositorio, para ello usaremos vscode.
+  - En el menu de git pulsar Clone Repository
+  ![center](imgs/vs1.png)
+  - Selecionamos:
+  ![center](imgs/vs2.png)
+---
+  - Nos pedirá que nos identifiquemos en gihub:
+  ![center](imgs/vs3.png)
+
+---
+
 6. Añadimos código a nuestro repositorio commits.
 7. Hacemos push al repositorio remoto.
-8. Con la extensión gitlens de vscode podemos ver el commit de cada línea y quién lo ha desarrollado.
+8. Entramos en la web del repositorio en github y vemos el código.
 
 ---
 
@@ -189,9 +198,9 @@ Tiene 6 pasos:
 
 
 ## Ejercicio
-Trabajamos en parejas.
+En este ejercico vamos a realizar un pull request:
 - En tu repositorio crea una nueva rama.
-- Añadir código.
+- Añade código.
 - Realiza un commit de tus cambios en la rama que has creado.
 - Realiza un push al repositorio.
 - Crea un pull request en GitHub.
