@@ -4,14 +4,18 @@ theme: default
 paginate: true
 ---
 
+
+
+
+# Introduccion a GIT
+
+
 <style>
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
 </style>
-
-# Introduccion a GIT
 
 ---
 
@@ -69,22 +73,28 @@ Reproducibility:
 Realizamos juntos los siguientes pasos:
 1. Crear una cuenta en github: https://github.com/
 3. Creamos un repositorio donde pondremos el código del ejercico del algoritmo.
-4. Pulsamos el icono de git en vscode.
+4. Pulsamos el icono de git en vscode. Nos pedira autentificarnos en Github.
 5. Clonamos nuestro repositorio.
-6. Añadimos código a nuestro repositorio haciendo stages y commits.
+
+--
+6. Añadimos código a nuestro repositorio commits.
 7. Hacemos push al repositorio remoto.
 8. Con la extensión gitlens de vscode podemos ver el commit de cada línea y quién lo ha desarrollado.
+
 ---
 
 ## Remoto y local:
 
 ![center](./imgs/git.png)
 
+---
 
-Si trabajamos nosotros solos no tenemos razn para tener conflictos entre el repositorio local y el remoto. Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos, de esta manera nunca perderemos tiempo resolviendo conflictos.
+- Si trabajamos nosotros solos no tenemos por que tener conflictos entre el repositorio local y el remoto. 
+- Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos, de esta manera nunca perderemos tiempo resolviendo conflictos.
 
 ---
 ## Ejercicio
+
 - Crea un nuevo repositorio en tu cuenta de github.
 - Clona el repositorio en tu ordenador.
 - Añade los ficheros del algorimo
@@ -158,7 +168,9 @@ Todo lo que hacemos con vscode lo podemos hacer con commandos, algunos de los m�
 
 ---
 ## Colaboración con otros desarrolladores
-Hasta ahora estabamos desarrolando solos, cuando queremos colaborar con otros desarrolladores podemos usar githubflow (https://guides.github.com/introduction/flow/). Es una forma ligera, branch-based workflow usado por equipos de todo el mundo (es usado por los desarrolladores de github por eso el nombre).
+- Hasta ahora estabamos desarrolando solos, cuando queremos colaborar con otros desarrolladores podemos usar githubflow (https://guides.github.com/introduction/flow/). Es una forma ligera, branch-based workflow usado por equipos de todo el mundo (es usado por los desarrolladores de github por eso el nombre).
+
+---
 
 Tiene 6 pasos:
 
@@ -178,11 +190,10 @@ Tiene 6 pasos:
 
 ## Ejercicio
 Trabajamos en parejas.
-- Uno de los dos crea un repositorio.
-- Da permiso a tu compañero en GitHub para que pueda realizar contribuciones.
-- Cada uno crea una nueva rama.
+- En tu repositorio crea una nueva rama.
 - Añadir código.
 - Realiza un commit de tus cambios en la rama que has creado.
 - Realiza un push al repositorio.
 - Crea un pull request en GitHub.
-- Finaliza el pull request.
+- Finaliza el pull request realizando el merge a la rama main.
+- Puedes ver todo el proceso en gitkraken.

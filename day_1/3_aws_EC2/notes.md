@@ -1,8 +1,5 @@
-https://docs.aws.amazon.com/dlami/latest/devguide/what-is-dlami.html
 
 
-
-crear usuario IAM
 
 
 aws configure
