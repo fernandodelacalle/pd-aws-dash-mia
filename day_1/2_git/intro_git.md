@@ -3,10 +3,6 @@ marp: true
 theme: default
 paginate: true
 ---
-
-
-
-
 # Introduccion a GIT
 
 
@@ -113,7 +109,7 @@ Reproducibility:
 
 ---
 ## Comandos Git:
-Todo lo que hacemos con vscode lo podemos hacer con commandos, algunos de los más comunes son los siguientes (mismos nombres que en Kraken):
+Todo lo que hacemos con vscode lo podemos hacer con commandos, algunos de los más comunes son los siguientes:
 
 #### Crear y clonar:
 |Comando| Descripción |

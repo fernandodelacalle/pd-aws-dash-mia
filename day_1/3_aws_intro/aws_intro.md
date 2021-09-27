@@ -131,8 +131,12 @@ IA Developer services:
 
 ---
 
+# Ejercicio
+- Creamos una cuenta en AWS.
+- Añadimos las alarmas de freetier y de coste.
 - Creamos un grupo y un usuario con policy: AdministratorAccess.
-
+- Obtenemos el csv con: User name,Password,Access key ID,Secret access key,Console login link
+- Nos logeamos en la consola de AWS con este nuevo usuario. 
 ---
 
 # Amazon Virtual Private Cloud (VPC)
@@ -167,14 +171,34 @@ https://aws.amazon.com/es/types-of-cloud-computing/
 ---
 
 
-# Instalación de AWS y vscode extension
+# Instalación de AWS CLI y vscode extension
 
 - https://aws.amazon.com/es/cli/
+- Podemos configurar la utilidad con:
+```bash
+aws configure
+```
+Nos pedira:
+```
+AWS Access Key ID [None]:  
+AWS Secret Access Key [None]: 
+Default region name [None]: eu-west-3
+Default output format [None]: text
+```
+
 - Extension:
 ![center](imgs/extension.png)
 
 
 ---
+
+# Ejercicio
+
+- Instala la AWS CLI.
+- Instala la extensión AWS en vscode.
+- Configura ambas.
+---
+
 # Documentación
 
 https://docs.aws.amazon.com/index.html

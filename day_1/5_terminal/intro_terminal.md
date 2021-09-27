@@ -470,7 +470,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 ---
 
 # Ejercicio I
-- Crea un fichero nuevo (tip: comando touch).
+- Crea un fichero nuevo (tip: comando touch, nombre fichero).
 - Crea una carpeta nueva.
 - Mueve el fichero a la carpeta recién creada.
 - Crea un fichero .py.

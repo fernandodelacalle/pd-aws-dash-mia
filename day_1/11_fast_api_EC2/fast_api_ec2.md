@@ -19,7 +19,8 @@ img[alt~="center"] {
 
 Vamos a desplegar el API que acabamos de hacer en AWS:
 
-- Para ello crearemos una máquina EC2 t2.micro. Es importante que en el proceso de creación abramos el puerto http, para ello configurala de la siguiente manera:
+- Para ello crearemos una máquina EC2 t2.micro. Es importante que en el proceso de creación abramos el puerto http, para ello al crearla configurar el security group de la siguiente manera:
+
 
 - Crea un nuevo repositorio de código en github.
 - Clona el repositorio.

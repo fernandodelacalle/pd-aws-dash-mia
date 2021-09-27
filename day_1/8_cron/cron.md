@@ -81,6 +81,7 @@ crontab -l
 ---
 ## Ejercicio
 
+- En tu instacia EC2.
 - Crea una carpeta nueva.
 - Genera dentro de esta un nuevo virtual enviroment
 - Instala la librería pandas
