@@ -19,6 +19,8 @@ img[alt~="center"] {
 - En las proximas clases veremos:
   - Herramientas nesarias para desarrollar de una manera más profesional.
   - Principios basicos de desarrollo.
+  - Principios basicos de Redes.
+  - Principios basicos de DevOps.
   - Amazon Web Services.
   - Desarrollo de visualizaciones interactivas.
   - Desarrollo de páginas web.
@@ -31,19 +33,19 @@ img[alt~="center"] {
   - Una cuenta en Github: https://github.com/
   - Docker: https://www.docker.com/get-started
   - Gitkraken: https://www.gitkraken.com/
-  - Si estas en un ordenador windows GitBash: 
+  - Si estas en un ordenador windows GitBash: https://gitforwindows.org/
 
 ---
 ## TOC: Principios de desarrolo y AWS I
+- Introducción a GIT.
+- Conceptos Básicos de Redes
 - Introdución a AWS.
 - Maquinas Virtuales en AWS: EC2
-- Desarrollo en remoto con vscode y SSH.
-- Introducción a GIT.
 - Introducción a la Terminal.
+- Desarrollo en remoto con vscode y SSH.
 - Python Virtual Enviroments.
 - Cronjobs
 - Variables de Entorno
-- Conceptos Básicos de Redes: OSI, puertos, protocolo ip, etc.
 - Desarrollo de APIs en python con Fast API.
 - Despliegue de un API en EC2.
 
