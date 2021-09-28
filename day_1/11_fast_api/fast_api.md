@@ -96,10 +96,13 @@ Si con un navegador entramos en  http://localhost:8000/
 veremos el mensaje {"Hello":"FastAPI"}.
 
 ---
+# Documentación
 
 - FastAPI nos da una documentación interactiva, puedes verla en:
     - http://localhost:8000/docs para documentación Swagger.
     - http://localhost:8080/redoc para redoc.
+
+- En http://localhost:8000/openapi.json fastapi nos genera la documentación en el estandard openapi (https://swagger.io/specification/).
 
 ---
 # Operaciones
@@ -138,6 +141,7 @@ async def read_item(user: str):
     return f"hola {user}"
 ```
 - Estas declaraciones están realizadas con Python types, esto permite a FastAPI validarlos.
+
 
 ---
 

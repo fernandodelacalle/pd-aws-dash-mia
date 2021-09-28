@@ -285,6 +285,13 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 |history 10| Muestra los últimos 10 comandos introducidos|
 
 ---
+# Comando sudo
+La palabra sudo antes de cualqueier comando ejecuta el comando con permisos de administrador.
+```bash
+sudo command
+```
+
+---
 
 # 8. Otros Comandos: ping y traceroute
 - El comando ping nos permite comprobar si somos capaces de llegar a una derminada dirección IP (0.0.0.0 es una dirección que apunta a la propia máquina):
@@ -483,11 +490,11 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 # Ejercicio II
 
 - Conectate a la máquina EC2 mediante SSH.
-
+- Instala la utilidad htop
+- Ejecuta el comando htop
 ---
 
 # Ejercicio III
 - Transfiere el fichero de market data de tu ordenador a la máquina de EC2.
 - Modificalo en la máquina de EC2 y traelo de vuelta.
-
 
