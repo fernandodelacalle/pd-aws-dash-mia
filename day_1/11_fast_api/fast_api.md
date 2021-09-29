@@ -140,8 +140,44 @@ app = FastAPI()
 async def read_item(user: str):
     return f"hola {user}"
 ```
-- Estas declaraciones están realizadas con Python types, esto permite a FastAPI validarlos.
+- Estas declaraciones están realizadas con Python type hints, esto permite a FastAPI validarlos.
 
+---
+# Type hints
+```python
+# This is how you declare the type of a variable type in Python 3.6
+age: int = 1
+# You don't need to initialize a variable to annotate it
+a: int 
+
+# For simple built-in types, just use the name of the type
+x: int = 1
+x: float = 1.0
+x: bool = True
+x: str = "test"
+x: bytes = b"test"
+```
+---
+
+```python
+from typing import List, Set, Dict, Tuple, Optional
+# In Python 3.8 and earlier, the name of the collection type is
+# capitalized, and the type is imported from 'typing'
+x: List[int] = [1]
+x: Set[int] = {6, 7}
+
+# For mappings, we need the types of both keys and values
+x: dict[str, float] = {'field': 2.0}  # Python 3.9+
+x: Dict[str, float] = {'field': 2.0}
+
+```
+
+---
+
+## Postman
+- Postman es una aplicación web que nos permite probar apis de manera muy sencilla.
+- https://www.postman.com/
+![center](imgs/podman.png)
 
 ---
 
@@ -165,3 +201,4 @@ uvicorn app:app --host 0.0.0.0 --port 80
 wget -q -O- "http://0.0.0.0:80/echo?name=pepe"
 ```
 - Esta sera una de las aplicaciones web que usaremos de aquí en adelante.
+- Puedes probarlo con Podman tambien.

@@ -16,6 +16,10 @@ img[alt~="center"] {
 
 ---
 
+La informática en la nube es la distribución de recursos de TI bajo demanda a través de Internet mediante un esquema de pago por uso. En vez de comprar, poseer y mantener servidores y centros de datos físicos, puede obtener acceso a servicios tecnológicos, como capacidad informática, almacenamiento y bases de datos, en función de sus necesidades a través de un proveedor de la nube como Amazon Web Services (AWS).
+
+---
+
 - En las proximas clases veremos:
   - Herramientas nesarias para desarrollar de una manera más profesional.
   - Principios basicos de desarrollo.

@@ -114,10 +114,9 @@ Puedes ver todas tus máquinas en el menu de Remote Explorer:
 
 ---
 
-Puede ser necesario tener que dar permisos al fichero .pem si estas en Linux o Win. Aparece el error: WARNING: UNPROTECTED PRIVATE KEY FILE! 
-Para solventarlo hacer:
+- Si va a usar un cliente SSH en un equipo macOS o Linux para conectarse a su instancia de Linux, utilice el comando que se indica a continuación para establecer los permisos de su archivo de clave privada de manera que solo usted pueda leerlo. 
 ```bash
-sudo chmod 600 /path/to/my/key.pem
+chmod 400 my-key-pair.pem
 ```
 
 Más info en:
