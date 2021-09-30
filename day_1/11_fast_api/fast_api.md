@@ -68,7 +68,7 @@ img[alt~="center"] {
 # Instalación
 
 ```bash
-pip install fastapi
+pip install fastapi uvicorn
 ```
 
 ---
@@ -86,7 +86,7 @@ def home():
 
 ---
 
-Para ejecutar usaremos el servidor ASGI uvicorn con el siguiente comando:
+Para ejecutar usaremos el servidor ASGI uvicorn, para ello usamos siguiente comando:
 
 ```bash
 uvicorn main:app --reload
@@ -96,6 +96,17 @@ Si con un navegador entramos en  http://localhost:8000/
 veremos el mensaje {"Hello":"FastAPI"}.
 
 ---
+
+# DEMO
+---
+
+El comando uvicorn tiene otros parametros:
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
+```
+
+---
+
 # Documentación
 
 - FastAPI nos da una documentación interactiva, puedes verla en:

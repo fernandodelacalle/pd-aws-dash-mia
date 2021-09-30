@@ -432,6 +432,13 @@ Aquí puedes encontrar un resumen de sus comandos más comúnes: https://www.nan
 
 ---
 
+## Configuracion de la Terminal
+
+- Existe un fichero en el raiz del usuario llamado ```.bashrc``` donde podemos configurar comandos y aspecto de la terminal.
+- Todos los comandos que se ponen estos ficheros se ejecutan antes de mostrarse la terminal.
+
+---
+
 ## 13. Conexion SSH.
 - Podemos conectarnos con otra máquina mediante el protocolo SSH.
 - Para conectarnos a la máquina EC2 hacemos lo siguiente:
@@ -456,10 +463,20 @@ La conexión se puede cerrar con ```ctrl + x``` o el comando ```exit```
 ---
 
 
-Puede ser necesario tener que dar permisos al fichero .pem si estas en Linux o Win. Aparece el error: WARNING: UNPROTECTED PRIVATE KEY FILE! 
+- Si va a usar un cliente SSH en un equipo macOS o Linux para conectarse a su instancia de Linux, utilice el comando que se indica a continuación para establecer los permisos de su archivo de clave privada de manera que solo usted pueda leerlo. 
+```bash
+chmod 400 my-key-pair.pem
+```
+
+Más info en:
+https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-and-linux/
+
+---
+
+Si Aparece el error: WARNING: UNPROTECTED PRIVATE KEY FILE! 
 Para solventarlo hacer:
 ```bash
-sudo chmod 600 /path/to/my/key.pem
+sudo chmod 600 my-key-pair.pem
 ```
 ---
 

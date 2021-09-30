@@ -18,6 +18,7 @@ img[alt~="center"] {
 - La extensión Visual Studio Code Remote - Containers permite usar un contenedor docker como entorno de desarrollo.
 <br />
 ![center](imgs/dev_cont.png)
+- Es parecido a la extensión Remote SSH.
 
 ---
 # Ejemplo

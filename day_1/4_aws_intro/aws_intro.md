@@ -130,7 +130,7 @@ IA Developer services:
 
 ---
 
-DEMO
+# DEMO
 
 ---
 
@@ -177,7 +177,7 @@ DEMO
 ---
 
 
-# Instalación de AWS CLI y vscode extension
+# AWS CLI
 
 - https://aws.amazon.com/es/cli/
 - Podemos configurar la utilidad con:
@@ -192,9 +192,20 @@ Default region name [None]: eu-west-3
 Default output format [None]: text
 ```
 
-- Extension:
+---
+
+# AWS Toolkit Visual Studio Code
+
+- Extension vscode:
 ![center](imgs/extension.png)
 
+
+---
+
+# Python Library: boto3
+
+- Boto3 facilita la integración de su aplicación, biblioteca o script de Python con los servicios de AWS, incluidos Amazon S3, Amazon EC2, Amazon DynamoDB y más.
+- https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 
 ---
 

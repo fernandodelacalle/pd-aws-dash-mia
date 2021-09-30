@@ -79,10 +79,12 @@ Algunos conceptos:
 
 - Imagen de contenedor: un paquete con todas las dependencias y la información necesarias para crear un contenedor. Una imagen incluye todas las dependencias (por ejemplo, los marcos), así como la configuración de implementación y ejecución que usará el runtime de un contenedor. Normalmente, una imagen se deriva de varias imágenes base que son capas que se apilan unas encima de otras para formar el sistema de archivos del contenedor. Una vez que se crea una imagen, esta es inmutable.
 - Dockerfile: archivo de texto que contiene instrucciones sobre cómo compilar una imagen de Docker. Es como un script por lotes; la primera línea indica la imagen base con la que se comienza y, después, deben seguirse las instrucciones para instalar programas necesarios, copiar archivos, etc., hasta obtener el entorno de trabajo que se necesita.
+
 ---
-- Compilación: la acción de crear una imagen de contenedor basada en la información y el contexto que proporciona su Dockerfile, así como archivos adicionales en la carpeta en que se crea la imagen. Puede compilar imágenes con el comando de Docker: docker build.
+- Build: la acción de crear una imagen de contenedor basada en la información y el contexto que proporciona su Dockerfile, así como archivos adicionales en la carpeta en que se crea la imagen. Las imagenes se compilan con el comando de Docker: docker build.
 - Contenedor: una instancia de una imagen de Docker. Un contenedor representa la ejecución de una sola aplicación, proceso o servicio. Está formado por el contenido de una imagen de Docker, un entorno de ejecución y un conjunto estándar de instrucciones. Al escalar un servicio, crea varias instancias de un contenedor a partir de la misma imagen. O bien, un proceso por lotes puede crear varios contenedores a partir de la misma imagen y pasar parámetros diferentes a cada instancia.
 ---
+
 ![center](imgs/docker_7.png)
 
 ---
@@ -177,7 +179,7 @@ Podemos definir algunas opciones:
 |--rm| eliminar el contenedor una vez terminado|
 |-d| Detach|
 |-p 8080:80| mapear un puerto host-contenedor|
-|-v /mydir:/targetdir ...| mapear un diretorio dentro del contendor|
+|-v /mydir:/targetdir ...| mapear un directório del host a dentro del contendor|
 
 ---
 
@@ -196,6 +198,11 @@ Algunos otros comandos de docker:
 |docker stop <container-hash-or-name>| Para el contenedor|
 |docker rm <container-hash-or-name>|| Elimina el contendor|
 |docker rmi <image-name>| Elimina la imagen|
+
+
+--- 
+
+# DEMO
 
 ---
 # Ejercicio
