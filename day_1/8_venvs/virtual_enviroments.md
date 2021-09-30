@@ -11,7 +11,7 @@ img[alt~="center"] {
 }
 </style>
 
-# Instalación de librerías y con virtual enviroments
+# Instalación de librerías con virtual enviroments
 
 ---
 
@@ -141,7 +141,7 @@ __pycache__
 - Crea un nuevo virtual enviroment.
 - Configura la extension de python.
 - Crea un fichero de python y ejecutalo desde la terminal y pulsando el botón de play.
-- Installa pandas.
+- Instala pandas.
 - Explora la carpeta del virtual enviroment. ¿que encuetras?
 - Crea un fichero ```requeriments.txt``` con las librerias que tienes instaladas.
 - Haz un commit y un push con los cambios (ten encuenta lo dicho sobre git).

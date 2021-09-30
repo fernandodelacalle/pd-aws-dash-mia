@@ -54,16 +54,11 @@ IA Developer services:
 
 ---
 
- Estas ubicaciones se componen de regiones, zonas de disponibilidad, Local Zones, AWS Outposts y zonas de Wavelength. Cada región es un área geográfica independiente.
- 
- - Cada región de Amazon EC2 se ha diseñado para que esté totalmente aislada de las demás regiones de Amazon EC2. Con ello se consigue la mejor tolerancia a errores y estabilidad posibles. 
-
- - Las zonas de disponibilidad son varias ubicaciones aisladas dentro de cada región.
-
+- Estas ubicaciones se componen de regiones, zonas de disponibilidad, Local Zones, AWS Outposts y zonas de Wavelength. Cada región es un área geográfica independiente.
+- Cada región de Amazon EC2 se ha diseñado para que esté totalmente aislada de las demás regiones de Amazon EC2. Con ello se consigue la mejor tolerancia a errores y estabilidad posibles. 
+- Las zonas de disponibilidad son varias ubicaciones aisladas dentro de cada región.
 - Cuando lanza una instancia o servicio, puede seleccionar una zona de disponibilidad o dejar que se eliga automaticamete.
-
 - Las regiones entre si estan conectadas con una red de muy alto anche de banda y rebundante.
-
 - https://aws.amazon.com/es/about-aws/global-infrastructure/
 
 ---
@@ -83,8 +78,9 @@ IA Developer services:
 - https://calculator.aws
 ---
 
-# Creación de la Cuenta
+# Nivel Gratuito
 
+- Más de 100 productos gratuitos.
 - https://aws.amazon.com/es/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all
 
 
@@ -95,9 +91,12 @@ IA Developer services:
 - Usaremos mayoritariamente recursos de la capa free tier.
 - Billing -> Billing Preferences --> FreeTier
 - Cloudwatch: Permite crear alarmas sobre métricas por ejemplo facturación.
+
 ---
 
+# DEMO
 
+---
 # AWS Identity and Access Management (IAM)
 
 - Con AWS Identity and Access Management (IAM) jestionamos los usuarios y las politicas de acceso en AWS.
@@ -131,6 +130,10 @@ IA Developer services:
 
 ---
 
+DEMO
+
+---
+
 # Ejercicio
 - Creamos una cuenta en AWS.
 - Añadimos las alarmas de freetier y de coste.
@@ -150,9 +153,12 @@ IA Developer services:
 
 ---
 
-- Podemos tener subnets en diferentes aailability zones.
+- Podemos tener subnets en diferentes zonas de disponibilidad.
 - Public subnets: tienen dirección IP publica. 
-- Vemos la VPC por defecto.
+
+---
+
+# DEMO
 
 
 ---
@@ -166,7 +172,7 @@ IA Developer services:
 
 ![center](imgs/serverless.jpg)
 
-https://aws.amazon.com/es/types-of-cloud-computing/
+- https://aws.amazon.com/es/types-of-cloud-computing/
 
 ---
 
@@ -189,6 +195,10 @@ Default output format [None]: text
 - Extension:
 ![center](imgs/extension.png)
 
+
+---
+
+# DEMO
 
 ---
 

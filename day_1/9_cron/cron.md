@@ -53,6 +53,9 @@ img[alt~="center"] {
 export VISUAL=nano; crontab -e
 ```
 
+---
+
+# DEMO
 
 ---
 
@@ -77,6 +80,9 @@ crontab -l
   ```
   Ejecuta el programa python /home/fernando_decalle/test.py cada minuto y guarda un log cada vez que se ejecuta.
 
+---
+
+# DEMO
 
 ---
 ## Ejercicio
