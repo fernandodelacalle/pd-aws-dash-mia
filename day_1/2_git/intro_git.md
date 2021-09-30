@@ -64,6 +64,23 @@ Reproducibility:
 ![center](imgs/basic-remote-workflow.png)
 
 ---
+
+## Remoto y local:
+
+![center](./imgs/git.png)
+
+---
+
+- Si trabajamos nosotros solos no tenemos por que tener conflictos entre el repositorio local y el remoto. 
+- Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos, de esta manera nunca perderemos tiempo resolviendo conflictos.
+
+---
+
+- Vscode nos integra un gestor de git muy facil de usar.
+- Existe una extension llamada Gitlens que ayade funcionalidades.
+
+---
+
 ## Demo:
 
 1. Crear una cuenta en github: https://github.com/
@@ -88,16 +105,6 @@ Reproducibility:
 
 ---
 
-## Remoto y local:
-
-![center](./imgs/git.png)
-
----
-
-- Si trabajamos nosotros solos no tenemos por que tener conflictos entre el repositorio local y el remoto. 
-- Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos, de esta manera nunca perderemos tiempo resolviendo conflictos.
-
----
 ## Ejercicio
 
 - Crea un nuevo repositorio en tu cuenta de github.
