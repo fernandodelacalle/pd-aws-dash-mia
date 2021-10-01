@@ -270,7 +270,6 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 |Comando |Explanation|
 |--|--|
-|sudo command| Ejecuta el comando con permisos de usuario root|
 |clear|Limpia la pantalla|
 |echo| Muestra contenido por pantalla. Es como el print() por ejemplo echo “Hello World”
 |more |Muestra un fichero una página cada vez.|
@@ -509,6 +508,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 - Conectate a la máquina EC2 mediante SSH.
 - Instala la utilidad htop
 - Ejecuta el comando htop
+
 ---
 
 # Ejercicio III

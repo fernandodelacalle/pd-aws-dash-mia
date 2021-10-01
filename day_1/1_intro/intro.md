@@ -40,43 +40,45 @@ La informática en la nube es la distribución de recursos de TI bajo demanda a 
   - Si estas en un ordenador windows GitBash: https://gitforwindows.org/
 
 ---
-## TOC: Principios de desarrolo y AWS I
+
+## Principios de desarrollo y AWS EC2
 - Introducción a GIT.
-- Conceptos Básicos de Redes
+- Conceptos Básicos de Redes.
 - Introdución a AWS.
 - Maquinas Virtuales en AWS: EC2
 - Introducción a la Terminal.
 - Desarrollo en remoto con vscode y SSH.
+
+---
+## Principios de desarrollo, AWS S3, AWS Lambda. 
 - Python Virtual Enviroments.
-- Cronjobs
-- Variables de Entorno
+- Cronjobs.
+- Variables de Entorno.
 - Desarrollo de APIs en python con Fast API.
 - Despliegue de un API en EC2.
+- Almacenamiento S3.
+- Funciones Lambda.
 
 ---
 
-## TOC: Docker y AWS II
-- Almacenamiento S3
-- Funciones Lambda.
+## Docker, AWS ECR, AWS ECS
+
 - Docker
 - Desarrollo desde docker en vscode.
 - Registro de imagenes docker en AWS ECR.
 - Funciones Lambda con Docker.
 - Despliege de imagenes docker en AWS EC2.
-- Despliege de imagenes docker en AWS ECR.
+- Despliege de imagenes docker en AWS ECS.
 - Despliege de imagenes docker en Amazon Lightsail.
 - Kubernetes.
+
 ---
 
-## TOC:  DevOps y AWS III
+## DevOps, AWS RDS, AWS Dynamo, Sagemaker
 - Filosofia Devops.
 - Acciones de Github.
 - Ejemplo DevOps AWS Lambda.
 - Ejemplo DevOps AWS EC2 y ECR.
-
----
-
-## TOC:  AWS IV
 - Bases de Datos Relacionales en AWS: RDS
 - AWS Athenea
 - Bases de Datos Relacionales en AWS: Dynamo
@@ -91,6 +93,7 @@ La informática en la nube es la distribución de recursos de TI bajo demanda a 
 - Graficos Interactivos con Plotly
 - Interfaces Interactivas con Dash
 - Despliege de aplicación web en AWS, Google Cloud y Azure.
+
 ### Proyecto final
 
 
