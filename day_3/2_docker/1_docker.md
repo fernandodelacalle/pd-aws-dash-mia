@@ -13,8 +13,6 @@ class: invert
 - Habría que ejecutar los siguientes commandos:
 
 ```bash
-sudo apt-get install python
-sudo apt-get install python3-venv
 git clone repo_url
 cd repo_url
 python3 -m venv test_env
@@ -74,28 +72,79 @@ img[alt~="center"] {
 - Los contenedores de imagen de Docker se pueden ejecutar de forma nativa en Linux y Windows.
 - Sin embargo, las imágenes de Windows solo pueden ejecutarse en hosts de Windows y las imágenes de Linux pueden ejecutarse en hosts de Linux y hosts de Windows (con una máquina virtual Linux de Hyper-V, hasta el momento); donde host significa un servidor o una máquina virtual.
 ---
+ 
 
-Algunos conceptos:
-
-- Imagen de contenedor: un paquete con todas las dependencias y la información necesarias para crear un contenedor. Una imagen incluye todas las dependencias (por ejemplo, los marcos), así como la configuración de implementación y ejecución que usará el runtime de un contenedor. Normalmente, una imagen se deriva de varias imágenes base que son capas que se apilan unas encima de otras para formar el sistema de archivos del contenedor. Una vez que se crea una imagen, esta es inmutable.
-- Dockerfile: archivo de texto que contiene instrucciones sobre cómo compilar una imagen de Docker. Es como un script por lotes; la primera línea indica la imagen base con la que se comienza y, después, deben seguirse las instrucciones para instalar programas necesarios, copiar archivos, etc., hasta obtener el entorno de trabajo que se necesita.
+# Imagen de contenedor
+- Un paquete con todas las dependencias y la información necesarias para crear un contenedor. Una imagen incluye todas las dependencias y código de nuestra aplicación.
+- Normalmente, una imagen se deriva de varias imágenes base que son capas que se apilan unas encima de otras para formar el sistema de archivos del contenedor.
+- Una vez que se crea una imagen, esta es inmutable.
 
 ---
-- Build: la acción de crear una imagen de contenedor basada en la información y el contexto que proporciona su Dockerfile, así como archivos adicionales en la carpeta en que se crea la imagen. Las imagenes se compilan con el comando de Docker: docker build.
-- Contenedor: una instancia de una imagen de Docker. Un contenedor representa la ejecución de una sola aplicación, proceso o servicio. Está formado por el contenido de una imagen de Docker, un entorno de ejecución y un conjunto estándar de instrucciones. Al escalar un servicio, crea varias instancias de un contenedor a partir de la misma imagen. O bien, un proceso por lotes puede crear varios contenedores a partir de la misma imagen y pasar parámetros diferentes a cada instancia.
+
+![center](imgs/img1.png)
+
+---
+
+![center](imgs/img2.png)
+
+---
+
+# Dockerfile
+- Archivo de texto que contiene instrucciones sobre cómo compilar una imagen de Docker.
+- Es como un script; la primera línea indica la imagen base con la que se comienza y, después, deben seguirse las instrucciones para instalar programas necesarios, copiar archivos, etc., hasta obtener el entorno de trabajo que se necesita.
+
+---
+# Build
+- La acción de crear una imagen de contenedor basada en la información y el contexto que proporciona su Dockerfile, así como archivos adicionales en la carpeta en que se crea la imagen. 
+- Las imagenes se compilan con el comando de Docker:
+```bash
+docker build .
+```
+---
+
+# Contenedor
+- Una instancia de una imagen de Docker. 
+- Un contenedor representa la ejecución de una sola aplicación, proceso o servicio. 
+- Está formado por el contenido de una imagen de Docker, un entorno de ejecución y un conjunto estándar de instrucciones. 
+- Al escalar un servicio, crea varias instancias de un contenedor a partir de la misma imagen.
 ---
 
 ![center](imgs/docker_7.png)
 
----
-- Registro: servicio que proporciona acceso a los repositorios. El registro predeterminado para la mayoría de las imágenes públicas es Docker Hub (propiedad de Docker como una organización). Normalmente, un registro contiene repositorios procedentes de varios equipos. Las empresas suelen tener registros privados para almacenar y administrar imágenes que han creado. Azure Container Registry es otro ejemplo.
 
 ---
+
+![center](imgs/im_cont.png)
+
+---
+
+# Registro
+- Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes. - Docker mantiene un registro público a través de Docker Hub.
+- Otros proveedores ofrecen registros para distintas colecciones de imágenes, como Amazon Elastic Container Registry (Amazon ECR). 
+- Las empresas suelen tener registros privados para almacenar y administrar imágenes que han creado.
+
+
+---
+
+![center](imgs/reg.png)
+
+---
+
+
 ![center](imgs/docker_6.png)
 
+
 ---
 
-- Orquestador: herramienta que simplifica la administración de clústeres y hosts de Docker. Puede administrar las redes de contenedor, las configuraciones, el equilibrio de carga, la detección de servicios, la alta disponibilidad, la configuración del host de Docker y muchas cosas más. Un orquestador se encarga de ejecutar, distribuir, escalar y reparar las cargas de trabajo a través de una colección de nodos.
+![center](imgs/tags.png)
+
+---
+
+# Orquestador
+- Herramienta que simplifica la administración de clústeres y hosts de Docker. 
+- Puede administrar las redes de contenedor, las configuraciones, el equilibrio de carga, la detección de servicios, la alta disponibilidad, la configuración del host de Docker y muchas cosas más. 
+- Un orquestador se encarga de ejecutar, distribuir, escalar y reparar las cargas de trabajo a través de una colección de nodos.
+- El más conocido es Kubernetes, AWS nos proporciona tanto kuberntes como su propio servicio: Amazon Elasic Container Service. 
 
 ![center](imgs/kubernetes.png)
 
@@ -104,12 +153,22 @@ Algunos conceptos:
 - Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias, en una imagen de contenedor. Una imagen es una representación estática de la aplicación o el servicio y de su configuración y las dependencias.
 
 ---
-- Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la aplicación para crear un contenedor, que se ejecutará en el host de Docker. Inicialmente, los contenedores se prueban en un entorno de desarrollo o un PC.
 
----
-- Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes y es necesario cuando se implementa en orquestadores de producción. Docker mantiene un registro público a través de Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker.
+- Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la aplicación para crear un contenedor, que se ejecutará en el host de Docker.
+
+
+![center](imgs/run.png)
+
+
+
 ----
 # 4. Proceso
+
+
+![center](imgs/proc.png)
+
+---
+
 ### 4.1. Creación del Dockerfile.
 ```dockerfile
 # set base image (host OS)
@@ -180,6 +239,21 @@ Podemos definir algunas opciones:
 |-d| Detach|
 |-p 8080:80| mapear un puerto host-contenedor|
 |-v /mydir:/targetdir ...| mapear un directório del host a dentro del contendor|
+
+
+---
+# Puertos
+
+
+![center](imgs/port.png)
+
+---
+# Volumes
+
+![center](imgs/vol.png)
+
+
+
 
 ---
 

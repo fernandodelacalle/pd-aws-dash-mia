@@ -43,6 +43,13 @@ IA Developer services:
 
 ---
 
+
+# Documentación
+
+https://docs.aws.amazon.com/index.html
+
+---
+
 # AWS Global Infrastructure
 
 - Amazon EC2 está hospedado en varias ubicaciones de todo el mundo.
@@ -218,8 +225,3 @@ Default output format [None]: text
 - Instala la AWS CLI.
 - Instala la extensión AWS en vscode.
 - Configura ambas.
----
-
-# Documentación
-
-https://docs.aws.amazon.com/index.html

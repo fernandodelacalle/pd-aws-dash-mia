@@ -203,13 +203,13 @@ x: Dict[str, float] = {'field': 2.0}
 ---
 - Ejecuta la aplicación con el comando uvicorn:
 ```bash
-python3.7 -m uvicorn app:app --host 0.0.0.0 --port 80
-uvicorn app:app --host 0.0.0.0 --port 80
+python3.7 -m uvicorn app:app --host 0.0.0.0 --port 8080
+uvicorn app:app --host 0.0.0.0 --port 8080
 ```
-- Visita en un navegador la página web http://0.0.0.0:80/docs, en windows http://localhost:80/
+- Visita en un navegador la página web http://0.0.0.0:8080/docs, en windows http://localhost:8080/
 - Si estas en la máquina EC2 puedes pronbarlo con con wget:
 ```
-wget -q -O- "http://0.0.0.0:80/echo?name=pepe"
+wget -q -O- "http://0.0.0.0:8080/echo?name=pepe"
 ```
-- Esta sera una de las aplicaciones web que usaremos de aquí en adelante.
+- Esta será una de las aplicaciones web que usaremos de aquí en adelante.
 - Puedes probarlo con Podman tambien.

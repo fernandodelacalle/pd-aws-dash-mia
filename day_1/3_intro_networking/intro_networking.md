@@ -201,7 +201,7 @@ Hoy en día se usan dos versiones del Protocolo de Internet:
 - Los protocolos de transporte se ocupan de la administración de los puetos.
 - Un dispositivo en red puede recibir mensajes en diferentes puertos virtuales, similar a cómo un puerto marítimo puede recibir barcos en diferentes muelles. Los diferentes puertos virtuales ayudan a distinguir diferentes tipos de tráfico de red. 
 - Esta asignación de puertos permite a una máquina establecer simultáneamente diversas conexiones con máquinas distintas, ya que todos los segmentos que se reciben tienen la misma dirección, pero van dirigidos a puertos diferentes. 
-- https://es.wikipedia.org/wiki/Anexo:Puertos_de_red
+- https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
 
 ---
 
@@ -275,7 +275,7 @@ En la cabezera UDP tenemos:
 - Estos protocolos se costruyen sobre TCP/IP.
     - HTTP
     - SSH
-    - protocolos para el envío de correo electrónico (SMTP, POP, IMAP) 
+    - Protocolos para el envío de correo electrónico (SMTP, POP, IMAP) 
     - Intercambio de archivos (FTP).
 - Cada uno de ellos suele usar un determinado puerto.
 ---

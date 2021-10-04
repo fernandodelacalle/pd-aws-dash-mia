@@ -250,6 +250,11 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 
 ---
 
+![center](imgs/nat-gateway-diagram.png)
+
+
+---
+
 # DEMO
 ---
 

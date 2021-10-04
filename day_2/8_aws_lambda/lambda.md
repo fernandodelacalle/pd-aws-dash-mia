@@ -1,18 +1,36 @@
+---
+marp: true
+theme: default
+paginate: true
+---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+# Amazon Lambda
 
 
 
 ---
 
 
-Lambda es un servicio informático que permite ejecutar código sin aprovisionar ni administrar servidores. Lambda ejecuta el código en una infraestructura informática de alta disponibilidad y realiza todas las tareas de administración de los recursos informáticos, incluido el mantenimiento del servidor y del sistema operativo, el aprovisionamiento de capacidad y el escalado automático, así como la monitorización del código y las funciones de registro. Con Lambda, puede ejecutar código para prácticamente cualquier tipo de aplicación o servicio de backend. 
-
+- Lambda es un servicio que permite ejecutar código sin aprovisionar ni administrar servidores.
+- Lambda ejecuta el código en una infraestructura informática de alta disponibilidad y realiza todas las tareas de administración de los recursos informáticos, incluyendo:
+    - El mantenimiento del servidor y del sistema operativo.
+    - El aprovisionamiento de capacidad y el escalado automático.
+    - Monitorización del código.
+    - Funciones de logging. 
+- Hasta 15 minutos de ejecución
+- Muy barato.
 
 ---
 
 Lenguajes Admitidos:
-
-https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-runtimes.html
+- https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-runtimes.html
 
 ---
 
@@ -115,10 +133,13 @@ Function
 
 Una función es un recurso que puede invocar para ejecutar el código en Lambda. Una función tiene código para procesar los eventos que pasa a la función o que otros AWS servicios envían a la función. 
 
+---
 
 Trigger
 
 Un desencadenador es un recurso o configuración que invoca una función de Lambda. Los desencadenadores incluyen los servicios de AWS que puede configurar para invocar una función 
+
+---
 
 Event
 
@@ -383,8 +404,7 @@ na función de Lambda también tiene una política, que se denomina rol de ejecu
 - HTTP With Gateway
 
 
-- Hasta 15 minutos de ejecución
-- Muy barato.
+
 
 
 ----
@@ -394,7 +414,7 @@ Ejercicio
 - Cree una funcion lamnda por defecto.
 - Modifique el código en la consola de aws para que mueste la fecha en la que se ejecuto, y realice un print de event y context
 - Prueba la función con el test por defecto.
-- Observe el resultado
+- Observe el resultado.
 
 ---
 
@@ -404,9 +424,8 @@ Realice todos estos pasos desde su instancia EC2 conectada a Visual Studio Code.
 - Cree una nueva carpeta
 - Cree una nueva función que use la libreria pandas.
 - Cree el paquete .zip
-- Suba el fichero a un bucket de s3. Para ello cree un nuevo bucket.
-- Ejecute el sieguiente comando para crear la función.
-
+- Suba el fichero a un bucket de s3. Para ello cree un nuevo bucket, puedes hacerlo con cualquiera de las herramientas vistas.
+- Ejecute el siguente comando para crear la función.
 - Prueba la función desde la consola de aws.
 
 

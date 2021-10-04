@@ -21,9 +21,11 @@ Vamos a desplegar el API que acabamos de hacer en AWS:
 
 - Para ello crearemos una máquina EC2 t2.micro. Es importante que en el proceso de creación abramos el puerto que queramos usar, para ello configurala de el security group de la siguiente manera:
 
+![center](./imgs/ports_fasta_api_ec2.png)
 
 Así podremos usar el puerto 8080 para ejecutar nuestra API.
 
+---
 - Crea un nuevo repositorio de código en github.
 - Clona el repositorio.
 - Genera un nuevo virtual enviroment.

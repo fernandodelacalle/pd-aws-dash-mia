@@ -23,7 +23,7 @@ img[alt~="center"] {
 
 ---
 
-## 1. ¿Qué es la linea de comandos?
+## ¿Qué es la linea de comandos?
 
 - Es un programa que interpreta comandos.
 - Permite al usuario ejecutar comandos introducidos de manera manual o de forma automática en scripts.
@@ -49,9 +49,9 @@ img[alt~="center"] {
 
 ---
 
-## 2. Ejecutando comandos:    
+## Ejecutando comandos:    
 
-### 2.1. Sintaxis
+###  Sintaxis
 
 Los comandos se pueden ejecutar solos o pasando argumentos adicionales:
 
@@ -73,7 +73,7 @@ Ejemplos:
 
 ---
 
-### 2.2. El PATH:
+### El PATH:
 - La mayoría de los programas están el PATH predeterminado y se pueden ejecutar directamente: escribir el comando **ls** ejecuta el comando ls.
 - Los comandos disponibles son los programas que están en los directorios almacenandos en la variable PATH.
 - Para ejecutar programas en el directorio actual: 
@@ -86,7 +86,7 @@ Ejemplos:
     ```
 ---
 
-### 2.3. Ayuda
+### Ayuda
 
 - La mayoría de los comandos tienen una opción --help o -h, que permite obtener una ayuda simple. Ejemplo: grep --help
 - La mejor fuente de ayuda es usar el comando man: man ls 
@@ -94,7 +94,7 @@ Ejemplos:
 
 ---
 
-### 2.4. Atajos
+### Atajos
 Algunos shortcuts para mejorar el manejo de la terminal:
 
 |Comando |Explanation|
@@ -107,7 +107,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-### 2.5. Caracteres Especiales
+### Caracteres Especiales
 - Antes de ver los comandos básicos, vamos a ver los caracteres y símbolos resevados por la terminal.
 
 | Comando | Description |
@@ -130,7 +130,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-## 3. Navegando por el Sistema de Ficheros
+## Navegando por el Sistema de Ficheros
 - No hace muchos años el acceso a nuestros ficheros se hacía tecleando una infinidad de instrucciones en nuestro terminal.
 - La consola puede seguir siendo muy necesaria en ocasiones. 
 - Así es bueno conocer los comandos que nos permitirán movernos de un directorio a otro sin problemas.
@@ -160,7 +160,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-## 4. Trabajando con ficheros y directorios
+## Trabajando con ficheros y directorios
 - Se pueden hacer muchas cosas como por ejemplo crear, copiar, mover o borrar archivos y carpetas desde el terminal de Linux. Para ello solo necesitarás utilizar una serie de comandos básicos para Linux con los que podrás gestionar tus archivos.
 
 ---
@@ -193,7 +193,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-## 5. Comandos para información del sistema:
+## Comandos para información del sistema:
 - En GNU/Linux es posible conocer la configuración de nuestro sistema, versión y sus componentes de hardware usando la terminal. No es necesario instalar otros programas. 
 
 ---
@@ -215,7 +215,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 ---
 
 
-## 6. Búsqueda
+## Búsqueda
 - Podemos buscar entre nuestros archivos en el sistema.
 - Solo tendrás que usar estos comandos para buscarlos por formato de archivo, por nombre, etc.
 
@@ -248,7 +248,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 ---
 
-## 7. Comandos para la gestión de grupos, usuarios y permisos
+## Comandos para la gestión de grupos, usuarios y permisos
 
 - Todo sistema operativo tiene un apartado de su configuración destinado a la gestión de usuarios, grupos y permisos. 
 - Los usuarios de escritorio en cambio no necesitan grandes despliegues, pero en ocasiones pueden surgir conflictos con los permisos de archivo. Por ejemplo puede suceder que no puedas editar o borrar un archivo de tu ordenador o que no puedas usar según qué periférico porque no estás en el grupo adecuado.
@@ -266,7 +266,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 ---
 
 
-# 8. Otros Comandos
+# Otros Comandos
 
 |Comando |Explanation|
 |--|--|
@@ -292,7 +292,7 @@ sudo command
 
 ---
 
-# 8. Otros Comandos: ping y traceroute
+# Otros Comandos: ping y traceroute
 - El comando ping nos permite comprobar si somos capaces de llegar a una derminada dirección IP (0.0.0.0 es una dirección que apunta a la propia máquina):
 ```bash
 ping 0.0.0.0
@@ -304,7 +304,7 @@ traceroute google.com
 
 ---
 
-# 8. Otros Comandos: wget
+# Otros Comandos: wget
 - El comando wget nos permite realizar peticiones http a una dirección.
 
 ```bash
@@ -319,7 +319,7 @@ wget -q -O- google.com
 
 ---
 
-# 8. Otros Comandos: zip
+# Otros Comandos: zip
 
 - El comando ```zip``` nos permite crear ficheros zip.
 - Para añadir un fichero:
@@ -345,12 +345,12 @@ zip -g file.zip file_to_add.txt
 
 ---
 
-# 9. Piping y Re-Direction
+# Piping y Re-Direction
 - Nos sirve para combinar comandos y guardar la salida de estos.
 
 ---
 
-## 9.1. Piping 
+## Piping 
 
 - El caracter  “|”, se usa para encadenar la salidad de un commando al siguiente.
 - Por ejemplo:
@@ -362,14 +362,14 @@ zip -g file.zip file_to_add.txt
 ---
 
 
-## 9.2. Redirecting
+## Redirecting
 - Muchas veces queremos guardar la salida de un comando. Para ello usamos el caracter  “>”.
 - Ejemplo: ```ls -la . > data.txt```: guarda la salida al fichero data.txt  si el fichero existe lo sobreescribe.
 - Ejemplo: ```ls -la . >> data.txt```: guarda la salida al fichero data.txt concatenando al final de los contenidos existentes.
 
 ---
 
-## 10. Scripts
+## Scripts
 - Un conjunto de comandos se pueden agrupar en ficheros formando un script.
 - Guardamos el fichero como .sh
 - Le damos permisos de ejecución: chmod +x script.sh
@@ -388,7 +388,7 @@ echo "Nice to meet you $name"
 
 ---
 
-## 11. Instalar utilidades en la terminal
+## Instalar utilidades en la terminal
 
 - Instalar aplicaciones por aplicaciones por terminal es la opción más rápida cuando tenemos por ejemplo una máquina virtual. 
 - Por desgracia instalar paquetes no es del mismo modo según al distribución que usemos. En este punto debemos diferenciar los comandos en función del sistema o gestor de paquetes que utilice tu distro Linux: RPM, DEB o YUM. Por ejemplo Amazon Linux usa YUM y Ubuntu usa DEB.
@@ -421,7 +421,7 @@ Ejemplo  ``sudo yum install nano``.
 ---
 
 
-## 12. Editor nano.
+## Editor nano.
 Existen múltiples editores de texto que podemos usar dentro de la terminal, uno de los más sencillos y que suele estar instalado por defecto en muchos sitemas Linux es nano:
 
 ![center](imgs/nano.png)
@@ -438,7 +438,7 @@ Aquí puedes encontrar un resumen de sus comandos más comúnes: https://www.nan
 
 ---
 
-## 13. Conexion SSH.
+## Conexion SSH.
 - Podemos conectarnos con otra máquina mediante el protocolo SSH.
 - Para conectarnos a la máquina EC2 hacemos lo siguiente:
 
@@ -479,7 +479,7 @@ sudo chmod 600 my-key-pair.pem
 ```
 ---
 
-## 14. Trasferencia de archivos con SCP.
+## Trasferencia de archivos con SCP.
 - Podemos transferir ficheros de nuestra máquina a la máquina EC2 con el comando SCP:
 ```bash
 scp -i test.pem ./source/test.txt ec2-user@DIR:~/destination/
@@ -512,6 +512,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 ---
 
 # Ejercicio III
-- Transfiere el fichero de market data de tu ordenador a la máquina de EC2.
+- Transfiere el fichero market_data.txt de tu ordenador a la máquina de EC2.
 - Modificalo en la máquina de EC2 y traelo de vuelta.
+Nota: usa el comando scp.
 
