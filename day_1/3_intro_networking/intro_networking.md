@@ -160,6 +160,17 @@ Hoy en día se usan dos versiones del Protocolo de Internet:
 # IP Pública y Privada
 
 - Existen un grupo de ips que se usan dentro de las redes locales.
+
+
+| From | To | Prefix|
+|--|--|--|
+|10.0.0.0  |10.255.255.255 | 10/8 |
+|172.16.0.0  |  172.31.255.255  | 172.16/12 |
+|192.168.0.0  | 192.168.255.255 | 192.168/16 |
+
+
+---
+
 ![center](imgs/local_net.bmp)
 
 ---

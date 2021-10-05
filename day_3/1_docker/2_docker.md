@@ -30,7 +30,3 @@ docker build -t my_api .
 docker run -p 8080:8080 -v ${PWD}/src:/code my_api 
 ```
 - Veras que si actualizas el fichero app.py la aplicación se actualiza y no tenemos que construir todo de nuevo.
-
-
-# Ejercicio
-- Realiza los pasos anteriores en tu ordenador.

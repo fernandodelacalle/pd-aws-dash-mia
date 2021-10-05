@@ -101,6 +101,10 @@ https://docs.aws.amazon.com/index.html
 
 ---
 
+![center](imgs/alarm.png)
+
+---
+
 # DEMO
 
 ---
