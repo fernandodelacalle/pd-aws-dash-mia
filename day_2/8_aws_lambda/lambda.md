@@ -13,8 +13,6 @@ img[alt~="center"] {
 
 # Amazon Lambda
 
-
-
 ---
 
 
@@ -327,6 +325,11 @@ my-deployment-package.zip$
 
 aws lambda update-function-code --function-name MyLambdaFunction --zip-file fileb://my-deployment-package.zip
 
+
+aws s3 mb s3://lambdastuffmiax
+aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
+
+
 ---
 
 - AWS Lambda monitorea automáticamente funciones Lambda en su nombre e informa sobre las métricas a Amazon CloudWatch. 
@@ -608,15 +611,36 @@ Realice todos estos pasos desde su instancia EC2 conectada a Visual Studio Code.
 
 # Ejercicio
 
-- Cree una función lamnda que se ejecute cuando un nuevo fichero se suba a un bucket s3. Para ello es necesario que cree un nuevo bucket
-- La función tendrá que leer el fichero y procesarlo. Los ficheros que subiremos será el fichero de prueba marketdata.csv
-- La función tendrá que procesar el fichero para que la salida sea otro fichero csv, que guardaremos en otro bucket con el siguiente formato:
+- Cree una función lamnda que se ejecute cuando un nuevo fichero se suba a un bucket s3. Para ello es necesario que cree un nuevo bucket.
+- La función tendrá que leer el fichero y procesarlo. Subiremos el  ficheros de prueba marketdata.csv
+- La función tendrá que procesar el fichero para que la salida sea otro fichero csv. Partiremos de la estructura original:
+```bash
+FECHA;SECUENCIA;VALOR;VOLUMEN;PRECIO;SOC_COMP;SOC_VEND;HORA;MODAL_CONTR;FECHANEG;NUM_OPER_SIBE;IND_P_A_C;IND_P_A_V;ORIGEN;EFECTIVO;PRECIO_MEDIO;PRECIO_ALTO;PRECIO_BAJO;VOLUMEN_ACUM;EFECTIVO_ACUM;PROC_OPER;MARCA_DIFU;MktID;MktSegID;FECHAEJEC;HORAEJEC;FECHAPUBLI;HORAPUBLI;MMTModel;DarkTrade;PostTransparencyFlags;TrdRegPublicationType;TrdRegPublicationReason;TradeCondition;TradePriceCondition;AlgorithmicTradeIndicator;TradePublishIndicator;RegulatoryReportType
+20180319;2119807;A3M     ;2;7.7000;0000;0000;09001800;100;20180319;30000001;1;1;EQ;15.40;7.7000;7.7000;7.7000;2;15.40;2 ;N;BMEX;XMAD;20180319;09:00:18.002;20180319;09:00:18;0; ;; ; ; ; ;0;1; 
+```
+
+Para guardar el fichero de salida como:
+```bash
+VALOR,VOLUMEN,PRECIO,TIME
+SAN,1,5.41,2018-03-19 09:00:18.002
+```
+- Solo guarda los registros de los tickers 'SAN','TEF', 'IDX'.
+
+-  Tip: prueba a hacer el código primero en local. Usa las siguientes opciones para leer el fichero:
+```python
+df = pd.read_csv(
+    's3://marketdatamiax/extracted_2018_RV_TICK_A_MFII_RV_TICK_A_20180319.TXT', 
+    sep=';',
+    usecols=['FECHA', 'VALOR', 'VOLUMEN', 'PRECIO', 'HORAEJEC']
+)
+```
+
 
 
 ----
 
 # Ejercicio
-- En este ejercicio vamos a crear un método get de un API usando lamnda y API Gateway.ç
+- En este ejercicio vamos a crear un método get de un API usando lamnda y API Gateway.
 - El método recivira dos parametros a y b y realizara su suma.
 - Para ello el triger de la función sera un http y usaremos API Gateway para exponer el API a internet.
 
