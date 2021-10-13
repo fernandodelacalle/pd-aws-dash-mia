@@ -247,65 +247,84 @@ def lambda_handler(event, context):
 - El archivo.zip contiene el código de su función y cualquier dependencia utilizada para ejecutar el código de su función (si corresponde) en Lambda.
 -  Si su función depende solo de bibliotecas estándar o bibliotecas SDK AWS, no necesita incluir estas bibliotecas en su archivo.zip. 
 - Si el archivo .zip tiene más de 50 MB, es necesario cargarlo desde un bucket Amazon Simple Storage Service (AmazonS3). 
+
 ---
 # Paquete de implementación sin dependencias
 
+
 - Crea un directorio del proyecto my-function:
-
+```bash
 mkdir my-math-function
-
+```
 - Desplácese hasta el directorio del proyecto:
-
+```bash
 cd my-function
+```
+
+---
 
 - Copie el contenido del código Python de ejemplo y guárdelo en un nuevo archivo llamado lambda_function.py. La estructura de directorios debería ser similar a la siguiente:
-
+```bash
 my-function$
 | lambda_function.py
-
+```
 - Agregue el archivo lambda_function.py a la raíz del archivo.zip.
-
+```bash
 zip my-deployment-package.zip lambda_function.py
+```
+
+---
 
 - Esto genera un archivo my-deployment-package.zip en el directorio del proyecto. El comando produce el resultado siguiente.
-
+```bash
 adding: lambda_function.py (deflated 50%)
-
+```
 --- 
 # Con librerias mediante un entorno virtual
 
 - Crea un entorno virtual:
+```bash
 python3 -m venv myvenv
+````
 
 - Activa el entorno virtual:
-
+```bash
 source myvenv/bin/activate
+```
+---
 
-Instale las bibliotecas con pip.
-
+- Instale las bibliotecas con pip.
+```bash
 (myvenv) ~/my-function$ pip install pandas
+```
 
-Desactive el entorno virtual.
-
+- Desactive el entorno virtual.
+```bash
 (myvenv) ~/my-function$ deactivate
+```
+
+---
 
 - Cree un paquete de implementación con las bibliotecas instaladas en la raíz.
-
+```bash
 ~/my-function$cd myvenv/lib/python3.8/site-packages
 zip -r ../../../../my-deployment-package.zip .
+```
 
 - El último comando guarda el paquete de implementación en la raíz del directorio my-function.
-sugerencia
 
 - Una biblioteca puede aparecer en site-packages o dist-packages y la primera carpeta lib o lib64. Puede utilizar el comando pip show para localizar un paquete específico.
 
-- Agregue archivos de código de función a la raíz del paquete de implementación.
+---
 
+- Agregue archivos de código de función a la raíz del paquete.
+```bash
 ~/my-function/myvenv/lib/python3.8/site-packages$ cd ../../../../
 ~/my-function$ zip -g my-deployment-package.zip lambda_function.py
+```
 
 - Cuando realice este paso, tendrá la siguiente estructura de directorio:
-
+```bash
 my-deployment-package.zip$
   │ lambda_function.py
   │ __pycache__
@@ -314,6 +333,8 @@ my-deployment-package.zip$
   │ chardet/
   │ chardet-3.0.4.dist-info/
   ...
+```
+
 
 ---
 
@@ -323,12 +344,22 @@ my-deployment-package.zip$
 - Para desplegar el nuevo código en la función, cargue el nuevo paquete  del archivo .zip. Puede utilizar la consola de Lambda para cargar un archivo .zip, el comando de la CLI UpdateFunctionCode o la extension de vscode.
 - El siguiente ejemplo carga un archivo denominado my-deployment-package.zip. Utilice el prefijo de archivo fileb:// para cargar el archivo .zip binario a Lambda. 
 
+```bash
 aws lambda update-function-code --function-name MyLambdaFunction --zip-file fileb://my-deployment-package.zip
+```
 
+---
 
+- Tambien puede subrilo a un bucket de s3
+```bash
 aws s3 mb s3://lambdastuffmiax
 aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
+```
 
+
+```bash
+aws lambda update-function-code --function-name MyLambdaFunction --zip-file s3://lambdastuffmiaxmy-deployment-package.zip
+```
 
 ---
 
@@ -369,8 +400,6 @@ aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
 ![center](imgs/events.png)
 - Veremos EventBridge, S3 y API Gateway.
 
-
-
 ---
 
 # EventBridge
@@ -381,7 +410,6 @@ aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
 ---
 
 ![center](imgs/cron_2.png)
-
 
 ---
 
@@ -406,7 +434,11 @@ aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
 ---
 
 
+![center](imgs/push-s3-example-10.png)
 
+---
+
+```json
 {
   "Records": [
     {
@@ -445,12 +477,16 @@ aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
     }
   ]
 }
+```
+
 
 ---
 
+- Nos iteresa principalmente:
+```python
 bucket = event['Records'][0]['s3']['bucket']['name']
 key = event['Records'][0]['s3']['object']['key']
-
+```
 
 ---
 
@@ -462,10 +498,6 @@ key = event['Records'][0]['s3']['object']['key']
 
 ![center](imgs/api_1.png)
 
----
-
-
-![center](imgs/push-s3-example-10.png)
 
 ---
 
@@ -477,7 +509,7 @@ key = event['Records'][0]['s3']['object']['key']
 
 ---
 
-
+```json
 {
   "resource": "/my/path",
   "path": "/my/path",
@@ -557,22 +589,22 @@ key = event['Records'][0]['s3']['object']['key']
   "body": "Hello from Lambda!",
   "isBase64Encoded": false
 }
+```
+
+---
+
+- https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
 
 
-https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
-
-
-
+```python
 def lambda_handler(event, context):
     # TODO implement
     params = event.get('multiValueQueryStringParameters')
-    
-    
     return {
     'statusCode': 200,
     'body': result
     }
-
+```
 
 
 ---
@@ -616,8 +648,11 @@ Realice todos estos pasos desde su instancia EC2 conectada a Visual Studio Code.
 - La función tendrá que procesar el fichero para que la salida sea otro fichero csv. Partiremos de la estructura original:
 ```bash
 FECHA;SECUENCIA;VALOR;VOLUMEN;PRECIO;SOC_COMP;SOC_VEND;HORA;MODAL_CONTR;FECHANEG;NUM_OPER_SIBE;IND_P_A_C;IND_P_A_V;ORIGEN;EFECTIVO;PRECIO_MEDIO;PRECIO_ALTO;PRECIO_BAJO;VOLUMEN_ACUM;EFECTIVO_ACUM;PROC_OPER;MARCA_DIFU;MktID;MktSegID;FECHAEJEC;HORAEJEC;FECHAPUBLI;HORAPUBLI;MMTModel;DarkTrade;PostTransparencyFlags;TrdRegPublicationType;TrdRegPublicationReason;TradeCondition;TradePriceCondition;AlgorithmicTradeIndicator;TradePublishIndicator;RegulatoryReportType
+
 20180319;2119807;A3M     ;2;7.7000;0000;0000;09001800;100;20180319;30000001;1;1;EQ;15.40;7.7000;7.7000;7.7000;2;15.40;2 ;N;BMEX;XMAD;20180319;09:00:18.002;20180319;09:00:18;0; ;; ; ; ; ;0;1; 
 ```
+
+---
 
 Para guardar el fichero de salida como:
 ```bash
@@ -641,7 +676,7 @@ df = pd.read_csv(
 
 # Ejercicio
 - En este ejercicio vamos a crear un método get de un API usando lamnda y API Gateway.
-- El método recivira dos parametros a y b y realizara su suma.
-- Para ello el triger de la función sera un http y usaremos API Gateway para exponer el API a internet.
+- El método recive dos parametros a y b y realizara su suma.
+- Para ello el trigger de la función sera http y usaremos API Gateway para exponer el API a internet.
 
 

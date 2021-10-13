@@ -492,7 +492,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 
 ---
 
-# Ejercicio I
+# Ejercicio
 - Crea un fichero nuevo (tip: comando touch, nombre fichero).
 - Crea una carpeta nueva.
 - Mueve el fichero a la carpeta recién creada.
@@ -503,7 +503,13 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 
 ---
 
-# Ejercicio II
+# Ejercicio
+- Crea dos ficheros de texto.
+- Comprime los dos ficheros en un zip.
+- Mueve el fichero zip a otro directorio.
+- Descomprime el contenido del fichero zip.
+---
+# Ejercicio
 
 - Conectate a la máquina EC2 mediante SSH.
 - Instala la utilidad htop
@@ -511,7 +517,7 @@ scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 
 ---
 
-# Ejercicio III
+# Ejercicio
 - Transfiere el fichero market_data.txt de tu ordenador a la máquina de EC2.
 - Modificalo en la máquina de EC2 y traelo de vuelta.
 Nota: usa el comando scp.

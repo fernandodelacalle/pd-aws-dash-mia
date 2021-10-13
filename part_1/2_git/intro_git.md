@@ -77,14 +77,14 @@ Reproducibility:
 ---
 
 - Vscode nos integra un gestor de git muy facil de usar.
-- Existe una extension llamada Gitlens que ayade funcionalidades.
+- Existe una extension llamada Gitlens que añade funcionalidades.
 
 ---
 
 ## Demo:
 
 1. Crear una cuenta en github: https://github.com/
-3. Creamos un repositorio donde pondremos el código del ejercico del algoritmo.
+3. Creamos un repositorio donde pondremos nuestro código.
 4. Pulsamos el icono de git en vscode. Nos pedira autentificarnos en Github.
 ---
 
