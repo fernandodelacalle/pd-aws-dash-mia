@@ -23,7 +23,7 @@ img[alt~="center"] {
 
 ---
 
-## ¿Qué es la linea de comandos?
+## ¿Qué es la línea de comandos?
 
 - Es un programa que interpreta comandos.
 - Permite al usuario ejecutar comandos introducidos de manera manual o de forma automática en scripts.
@@ -41,7 +41,7 @@ img[alt~="center"] {
 ---
 ### Windows
 - La terminal de windows no es una termial BASH.
-- Podemos installar una terminal bash.
+- Podemos instalar una terminal bash.
 - https://git-scm.com/downloads
 - Abrir el programa Git Bash.
 - Podemos poner esta terminal por defecto en vscode:
@@ -99,8 +99,8 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 |Comando |Explanation|
 |--|--|
-|Up/Down Arrow Keys|Hace scroll por los comadnos ejecutados anteriormente|
-|history|Muestra la historia de todos los comandos introducidos.|
+|Up/Down Arrow Keys|Hace scroll por los comandos ejecutados anteriormente|
+|history|Muestra la historia de todos los comandos introducidos|
 |TAB Completion|Autocompletado|
 |[Ctrl]+c |Termina el proceso actual. Si no está corriendo de fondo.|
 |[Ctrl]+d |Termina la terminal actual.|
@@ -110,17 +110,17 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 ### Caracteres Especiales
 - Antes de ver los comandos básicos, vamos a ver los caracteres y símbolos resevados por la terminal.
 
-| Comando | Description |
+| Comando | Descripción |
 |--|--|
 | / | Separador de directorios|
 | . | Directorio actual|
 | ..| Directorio padre o anterior|
-| ~ |Directorio del home del usuario actual|
+| ~ | Directorio del home del usuario actual|
 | * | Representa 0 o más caracteres en un nombre de fichero. Por ejemplo pic*2002 representa pic2002, picJanuary2002, picFeb292002, etc.|
 
 ---
 
-| Comando | Description |
+| Comando | Descripción|
 |--|--|
 | ? | Representa un único caracter en un nombre de fichero. hello?.txt puede representar hello1.txt, helloz.txt, pero no hello22.txt|
 | [] | Representa un rango de valores. [0-9], [A-Z], etc. Ejemplo: hello[0-2].txt representa hello0.txt, hello1.txt, and hello2.txt|
@@ -140,7 +140,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 ---
 - Algunos comandos:
 
-| Comando | Description |
+| Comando | Descripción|
 |--|--|
 |cd /home/usuario| Lleva directamente hasta la ruta que indiques, en este caso hasta el directorio “usuario”.|
 |cd ..|Retrocede un nivel en la jerarquía de directorios.|
@@ -151,7 +151,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-| Comando | Description |
+| Comando | Descripción|
 |--|--|
 |pwd| Muestra la ruta del directorio donde te encuentras actualmente.|
 |ls| Muestra los archivos y carpetas del directorio donde te encuentras.|
@@ -164,17 +164,17 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 - Se pueden hacer muchas cosas como por ejemplo crear, copiar, mover o borrar archivos y carpetas desde el terminal de Linux. Para ello solo necesitarás utilizar una serie de comandos básicos para Linux con los que podrás gestionar tus archivos.
 
 ---
-| Comando | Description |
+| Comando | Descripción |
 |--|--|
 | mkdir Directorio| Crea una nueva carpeta o directorio con nombre que le indiques. En este caso, “Directorio”.|
 | mkdir Directorio1 Directorio 2| Crea dos carpetas simultáneamente.|
 | rmdir Directorio| Borra la carpeta llamada “Directorio”.|
-| rm -rf Directorio|Elimina una carpeta llamada “Directorio” y todo su contenido.|
+| rm -rf Directorio| Elimina una carpeta llamada “Directorio” y todo su contenido.|
 | mv Viejodirectorio Nuevodirectorio| Renombra o mueve un archivo o carpeta.|
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 | cp Archivo| Copia un archivo.|
 | cp Archivo1 Archivo2| Copia dos archivos simultáneamente.|
@@ -183,7 +183,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 | ln Archivo Enlacearchivo| Crea un enlace físico con el nombre indicado al archivo o directorio indicado.|
 | touch fichero | Crea un fichero de nombre fichero|
@@ -198,14 +198,14 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 |top|Muestra las tareas.
 |arch|Muestra la arquitectura de tu ordenador.
 |ps|Muestra los processos que se están ejecutando actualmente.|
 |date| Mostrará la fecha actual del sistema.|
 |df| Muestra el espacio libre en disco (“Disk Free”)|
-|du|Muestra el uso de disco de un directorio. “du -s” para el directorio actual.|
+|du| Muestra el uso de disco de un directorio. “du -s” para el directorio actual.|
 |free| Muestra la memoria usada y disponible|
 
 ---
@@ -221,7 +221,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 |find . -name Archivo| Busca ese archivo o directorio comenzado por el directorio actual|
 |find / -name Archivo| Busca ese archivo o directorio comenzado por la raíz del sistema|
@@ -229,7 +229,7 @@ Algunos shortcuts para mejorar el manejo de la terminal:
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 |find /home/usuario -name \*.bin| Busca todos los archivos con la extensión que le indiques, en este caso “. bin”, dentro del directorio indicado, que en el ejemplo es “/home/usuario”|
 |find /usr/bin -type f -mtime -5| Busca los archivos creados o cambiados en el sistema dentro de los últimos “5” días|
@@ -256,7 +256,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 ---
 
-| Comando | Description |
+| Comando | Descripción  |
 |--|--|
 |ls -lh| Muestra los permisos de un archivo.|
 | chown Usuario1 Archivo1|Cambia el propietario de un determinado archivo.|
@@ -268,7 +268,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 # Otros Comandos
 
-|Comando |Explanation|
+|Comando | Explicación |
 |--|--|
 |clear|Limpia la pantalla|
 |echo| Muestra contenido por pantalla. Es como el print() por ejemplo echo “Hello World”
@@ -276,7 +276,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 ---
 
-|Comando |Explanation|
+|Comando | Explicación |
 |--|--|
 |less|Una mejora del comando “more”. Permite hacer scroll|
 |grep|Permite buscar en el contenido de un fichero. Por ejemplo: grep “abuscar” fichero 
@@ -285,7 +285,7 @@ Busca todos los ficheros en el directorio actual y subdirectorios de este, que t
 
 ---
 # Comando sudo
-La palabra sudo antes de cualqueier comando ejecuta el comando con permisos de administrador.
+La palabra sudo antes de cualquier comando ejecuta el comando con permisos de administrador.
 ```bash
 sudo command
 ```
@@ -413,8 +413,8 @@ Ejemplo  ``sudo yum install nano``.
 
 ---
 
-- Si installamos htop con ``yum install htop``
-- Tenemos disponible el comando htop que nos da informacion ampliada de los recursos de la maquína:
+- Si instalamos htop con ``yum install htop``
+- Tenemos disponible el comando htop que nos da información ampliada de los recursos de la máquina:
 
 ![center](imgs/htop.png)
 
@@ -433,7 +433,7 @@ Aquí puedes encontrar un resumen de sus comandos más comúnes: https://www.nan
 
 ## Configuracion de la Terminal
 
-- Existe un fichero en el raiz del usuario llamado ```.bashrc``` donde podemos configurar comandos y aspecto de la terminal.
+- Existe un fichero en el raíz del usuario llamado ```.bashrc``` donde podemos configurar comandos y aspecto de la terminal.
 - Todos los comandos que se ponen estos ficheros se ejecutan antes de mostrarse la terminal.
 
 ---
@@ -485,7 +485,7 @@ sudo chmod 600 my-key-pair.pem
 scp -i test.pem ./source/test.txt ec2-user@DIR:~/destination/
 ```
 
-- Tambien de la máquina EC2 a nuestra máquina:
+- También de la máquina EC2 a nuestra máquina:
 ```bash
 scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
 ```

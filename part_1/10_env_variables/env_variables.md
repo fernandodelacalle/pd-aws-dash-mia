@@ -41,7 +41,7 @@ variable=valor
 ```bash
 export VARIABLE=valor
 ```
-- Exite un fichero: .bash_profile en el raiz de nuestro usuario donde podemos definir varibales y otros comandos que queremos que se ejecuten o esten disponibles cada vez que abrimos una terminal.
+- Exite un fichero: .bash_profile en el raiz de nuestro usuario donde podemos definir variables y otros comandos que queremos que se ejecuten o esten disponibles cada vez que abrimos una terminal.
 
 ---
 
@@ -62,6 +62,6 @@ os.environ["API_KEY"] = “YOUR_API_KEY”
 ---
 # Ejercicio
 - Crea una variable de entorno en la terminal.
-- Escribe un programa que leea esa variable y la muestre por pantalla.
+- Escribe un programa que lea esa variable y la muestre por pantalla.
 
 

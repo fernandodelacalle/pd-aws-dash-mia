@@ -44,7 +44,7 @@ Branching:
 ---
 
 Reproducibility:
-- A veces no sabemos que versión del código nos ha dado los resultados.
+- A veces no sabemos qué versión del código nos ha dado los resultados.
 - Si encotramos un error no sabemos si afectó a nuestros resultados.
 
 ---
@@ -54,7 +54,7 @@ Reproducibility:
 - Muy popular.
 - Distribuido.
 - Muchas plataformas para elegir.
-- Github se esta convirtiendo en la forma más usada de compartir código.
+- Github se está convirtiendo en la forma más usada de compartir código.
 - Es muy potente pero puede no ser muy "user friendly"
 
 ---
@@ -72,12 +72,12 @@ Reproducibility:
 ---
 
 - Si trabajamos nosotros solos no tenemos por que tener conflictos entre el repositorio local y el remoto. 
-- Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos, de esta manera nunca perderemos tiempo resolviendo conflictos.
+- Tenemos que estar seguros de hacer siempre git pull al empezar a desarrollar y git push cuando terminemos; de esta manera nunca perderemos tiempo resolviendo conflictos.
 
 ---
 
-- Vscode nos integra un gestor de git muy facil de usar.
-- Existe una extension llamada Gitlens que añade funcionalidades.
+- Vscode nos integra un gestor de git muy fácil de usar.
+- Existe una extensión llamada Gitlens que añade funcionalidades.
 
 ---
 
@@ -85,11 +85,11 @@ Reproducibility:
 
 1. Crear una cuenta en github: https://github.com/
 3. Creamos un repositorio donde pondremos nuestro código.
-4. Pulsamos el icono de git en vscode. Nos pedira autentificarnos en Github.
+4. Pulsamos el icono de git en vscode. Nos pedirá autentificarnos en Github.
 ---
 
 5. Clonamos nuestro repositorio, para ello usaremos vscode.
-  - En el menu de git pulsar Clone Repository
+  - En el menú de git pulsar Clone Repository
   ![center](imgs/vs1.png)
   - Selecionamos:
   ![center](imgs/vs2.png)
@@ -112,17 +112,17 @@ Reproducibility:
 - Añade los ficheros del algorimo
 - Realiza un commit de tus cambios.
 - Realiza un push de tus cambios.
-- Ve a GitHub y comprueba que tus cambios esta en el repositorio.
+- Ve a GitHub y comprueba que tus cambios están en el repositorio.
 
 ---
 ## Comandos Git:
-Todo lo que hacemos con vscode lo podemos hacer con commandos, algunos de los más comunes son los siguientes:
+Todo lo que hacemos con vscode lo podemos hacer con comandos, algunos de los más comunes son los siguientes:
 
 #### Crear y clonar:
 |Comando| Descripción |
 |--|--|
 |git clone repo_url | Copia el repositorio remoto al directorio actual |
-|git init | Crea un repositorio vacio en el directorio actual|
+|git init | Crea un repositorio vacío en el directorio actual|
 
 ---
 #### Básicos
@@ -173,8 +173,8 @@ Todo lo que hacemos con vscode lo podemos hacer con commandos, algunos de los m�
 
 - Gitkraken es una aplicacción que nos permite de manera muy sencilla hacer un seguimineto de los repositorios y realizar acciones sobre ellos.
 
-1. Descargar y installar gitkraken: https://www.gitkraken.com/ (al realizar la descarga y el registro usa las mismas credenciales que en github)
-2. Clona atraves de Gitkraken.
+1. Descargar y instalar gitkraken: https://www.gitkraken.com/ (al realizar la descarga y el registro usa las mismas credenciales que en github)
+2. Clona a través de Gitkraken.
 3. Realiza un commmit
 4. Realiza un push de los cambios.
 
@@ -194,7 +194,7 @@ Tiene 6 pasos:
 2. Añadimos commits. Snapshots del desarrollo frecuentes crear puntos a los que podemos volver en caso de errores.
 3. Una vez terminado el desarrollo, hacemos un push de nuestra rama y creamos un pull request.
 4. Discutir y revisar el código. El equipo realiza la revisión del código comentando, testeando y revisado la pull request.
-5. Merge. Una vez pulsado este boton el códígo se junta a la rama master. Siempre realizaremos los merges desde la interfaz web y es recomendable bloquear la rama master para que solo se pueda hacer de esta manera.
+5. Merge. Una vez pulsado este botón el códígo se junta a la rama master. Siempre realizaremos los merges desde la interfaz web y es recomendable bloquear la rama master para que solo se pueda hacer de esta manera.
 6. El código se despliega a los entornos pertinentes.
 
 ---

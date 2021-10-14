@@ -44,7 +44,7 @@ img[alt~="center"] {
 ```bash
 * * * * * python /path/mi_algo.py
 ```
-- Ejecutaria cada minuto el comando /path/mi_algo.py.
+- Ejecutaría cada minuto el comando /path/mi_algo.py.
 
 ---
 - Por defecto crontab nos hace editar con vim: i para entrar, editamos, salimos con esc y guardamos cons :wq
@@ -94,4 +94,4 @@ crontab -l
 - Escribe un programa que use esta librería y que tenga un print que ponga la hora actual por pantalla.
 - Genera un script sh que active el virtual enviroment y ejecute tu programa.
 - Prueba a ejecutar el script en la terminal (```./my_script.sh```), puede que tengas que dar a este fichero permisos de ejecución con: ```chmod +x my_script.sh```
-- Usa crontab para que se ejecute cada minuto y guarde el log.
+- Usa crontab para que se ejecute cada minuto y guarda el log

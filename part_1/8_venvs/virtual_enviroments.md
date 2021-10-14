@@ -16,7 +16,7 @@ img[alt~="center"] {
 ---
 
 ## Requirements file
-- Los proyectos de python siempre van acompañados de un fichero que indica las librerias que se usan. 
+- Los proyectos de python siempre van acompañados de un fichero que indica las librerías que se usan. 
 Este fichero se denomina requirements.txt y dentro tiene la siguiente estructura:
 ```
 jupyterlab==0.35.4
@@ -65,7 +65,7 @@ Para crear un virtual enviroment hacemos lo siguiente:
 python3 -m venv venv
 ```
 - Se crea una carpeta con el nombre venv en el directorio donde nos encontremos.
-- El segundo venv es el nombre de la carpeta donde se van a guardar las librerias.
+- El segundo venv es el nombre de la carpeta donde se van a guardar las librerías.
 - Podemos ponerle otro nombre:
 ```
 python3 -m venv mivenv
@@ -85,7 +85,7 @@ source venv/bin/activate
 
 ---
 ## Virtual enviroment: vscode
-- Instalamos la extension de python en vscode:
+- Instalamos la extensión de python en vscode:
 ![center](./imgs/python.png)
 
 - Selecionamos el interprete (para axtivar la extensión abrir un fichero de python):
@@ -96,7 +96,7 @@ source venv/bin/activate
 
 - En path seleccionamos:
 ![center](./imgs/vscode3.png)
-- Ahora vscode dispondra de autocompletado y la ejecución debuger y terminal funcionaran por defecto en ese virtual enviroment.
+- Ahora vscode dispondrá de autocompletado y la ejecución debuger y terminal funcionarán por defecto en ese virtual enviroment.
 
 ---
 ## Virtual enviroment: Windows
@@ -121,7 +121,7 @@ Set-ExecutionPolicy Unrestricted
 ---
 
 ## GIT
-- Si no tenemos cuidado podemos acabar introdución todo el código de todas las librería que usamos en nuestro repositorio de git.
+- Si no tenemos cuidado podemos acabar introduciendo todo el código de todas las librerías que usamos en nuestro repositorio de git.
 - Para ello tenemos el fichero ```.gitignore``` en el raiz del repositorio donde podemos.
 - En este fichero decimos los directorios y  ficheros que no queremos sincronizar.
 - Normalmente solemos poner en un proyecto python:
@@ -139,9 +139,9 @@ __pycache__
 - Desde el vscode de tu máquina EC2 clona el repo.
 - Abre el repo en vscode (file -> open folder)
 - Crea un nuevo virtual enviroment.
-- Configura la extension de python.
+- Configura la extensión de python.
 - Crea un fichero de python y ejecutalo desde la terminal y pulsando el botón de play.
 - Instala pandas.
-- Explora la carpeta del virtual enviroment. ¿que encuetras?
-- Crea un fichero ```requeriments.txt``` con las librerias que tienes instaladas.
-- Haz un commit y un push con los cambios (ten encuenta lo dicho sobre git).
+- Explora la carpeta del virtual enviroment. ¿Qué encuetras?
+- Crea un fichero ```requeriments.txt``` con las librerías que tienes instaladas.
+- Haz un commit y un push con los cambios (ten en cuenta lo dicho sobre git).

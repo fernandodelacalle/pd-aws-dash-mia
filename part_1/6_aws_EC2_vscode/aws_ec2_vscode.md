@@ -16,7 +16,7 @@ img[alt~="center"] {
 
 --- 
 
-- Como habeis visto desarrollar en desde la terminal puede ser tedioso.
+- Como habéis visto desarrollar desde la terminal puede ser tedioso.
 - vscode tiene una extensión llamada Remote - SSH que nos permite trabajar con nuestro vscode dentro de la máquina EC2.
 
 
@@ -51,7 +51,7 @@ Los pasos para conectar nuestro Code a la máquina EC2 son los siguientes:
 ![center](imgs/ext.png)
 ---
 
-- Pulsamos el boton verde de la la esquina inferior izquierda.
+- Pulsamos el botón verde de la la esquina inferior izquierda.
 ![center](imgs/2.png)
 ---
 
@@ -69,7 +69,7 @@ Los pasos para conectar nuestro Code a la máquina EC2 son los siguientes:
 - Se abrira un fichero
 ---
 
-Introduce lo sigueinte:
+Introduce lo siguinte:
 
 ```
 Host aws-ec2
@@ -89,17 +89,17 @@ Donde:
 
 ---
 
-- Veras un dialogo como:
+- Verás un diálogo como:
 
 ![center](imgs/ec2_2.png)
 
 ---
-Una vez confgurado, puedes pulsar otra vez el boton verde, elegir Connect to host, y tendira que aparecer la instancia EC2.
+Una vez confgurado, puedes pulsar otra vez el boton verde, elegir Connect to host, y tenderá que aparecer la instancia EC2.
 ![center](imgs/sechost.png)
 
 ---
 
-Se abrira una nueva ventana, donde estaras conectado en tu máquina EC2:
+Se abrirá una nueva ventana, donde estarás conectado en tu máquina EC2:
 
 ![center](imgs/win.png)
 
@@ -109,7 +109,7 @@ Una vez conectado puedes abrir una carpeta en concreto de la máquina EC2:
 
 ---
 
-Puedes ver todas tus máquinas en el menu de Remote Explorer:
+Puedes ver todas tus máquinas en el menú de Remote Explorer:
 ![center](imgs/ssh_target.png)
 
 ---

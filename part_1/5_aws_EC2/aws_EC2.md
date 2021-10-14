@@ -51,14 +51,14 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 
 ---
 
-# Servicios de almacenamientos: Bloque, Fichero y Objeto.
+# Servicios de almacenamiento: Bloque, Fichero y Objeto.
 
 ![center](imgs/tipos.png)
 
 ---
 
 # Almacenamiento
-- Las instancias EC2 son instancias con respaldo Amazon Elastic Block Store (EBS) 
+- Las instancias EC2 son instancias con respaldo Amazon Elastic Block Store (EBS).
 - El volumen raíz es un volumen de EBS.
 
 ---
@@ -88,7 +88,7 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 ## Crear un par de claves
 
 - AWS utiliza criptografía de clave pública para proteger la información de inicio de sesión de la instancia.
--  Una instancia de Linux no tiene contraseñas; en su lugar, se utiliza un par de claves para iniciar sesión en su instancia de manera segura. 
+- Una instancia de Linux no tiene contraseñas; en su lugar, se utiliza un par de claves para iniciar sesión en su instancia de manera segura. 
 - Se especifica el nombre del par de claves cuando lanza la instancia, luego proporciona la clave privada cuando inicia sesión con SSH. Mediante el comando ssh o con vscode.
 - Se puede crear antes de crear la instacia o cuando creamos la instacia.
 - Podemos usar la misma clave privada para varas instacia.
@@ -133,11 +133,11 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 
 ---
 
-- En la página Choose an Instance Type (Elegir un tipo de instancia), El resto de pasos podemos dejar que que el asistente complete las demás opciones de configuración.
+- En la página Choose an Instance Type (Elegir un tipo de instancia). El resto de pasos podemos dejar que que el asistente complete las demás opciones de configuración.
 
 - En Security Groups (Grupos de seguridad), verá que el asistente ha creado y seleccionado un grupo de seguridad.
--  Puede usar este grupo de seguridad o, como opción, puede seleccionar el grupo de seguridad ya creado.
--  Elija Review and Launch (Revisar y lanzar).
+- Puede usar este grupo de seguridad o, como opción, puede seleccionar el grupo de seguridad ya creado.
+- Elija Review and Launch (Revisar y lanzar).
 - En la página Review Instance Launch, elija Launch.
 
 ---
@@ -155,7 +155,7 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 - Puede ver el estado del lanzamiento en la pantalla Instances (Instancias). 
 - La instancia tarda poco tiempo en lanzarse. 
 - Al lanzar una instancia, su estado inicial es pending. 
-- Una vez iniciada la instancia, el estado cambia a running y recibe un nombre de DNS público. (Si la columna del DNS IPv4 público está oculta, elija el icono de configuración ( ) en la esquina superior derecha, active DNS IPv4 público , y elija Confirmar ).
+- Una vez iniciada la instancia, el estado cambia a running y recibe un nombre de DNS público. (Si la columna del DNS IPv4 público está oculta, elija el icono de configuración (en la esquina superior derecha, active DNS IPv4 público , y elija Confirmar ).
 
 ---
 
@@ -177,7 +177,7 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 - Cuando se le indique que confirme, elija Terminate (Terminar).
 - Amazon EC2 apaga y termina la instancia. 
 - Una vez terminada la instancia, permanecerá visible en la consola durante un breve periodo y, a continuación, se elimina automáticamente la entrada.
--  No puede quitar la instancia terminada de la pantalla de la consola por sí mismo.
+- No puede quitar la instancia terminada de la pantalla de la consola por sí mismo.
 
 ---
 
@@ -198,7 +198,7 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
   - P5: Hasta 8 GPU V100 de NVIDIA Tesla,
   - P2: GPU NVIDIA K80 
   - G4dn:GPU NVIDIA T4 
-- Es necesario pedir a AWS para que aumente los limites de instancias en estos tipos.
+- Es necesario pedir a AWS para que aumente los límites de instancias en estos tipos.
 
 ---
 
@@ -218,15 +218,15 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 
 #  AWS Deep Learning AMI. 
 
-- AMIs preconfigurada con NVIDIA CUDA y CUDNIA CUDNN
-- Instaladas con la mayoria de las librerias de deep learning: Tensorflow, pytorch etc.
+- AMIs preconfigurada con NVIDIA CUDA y CUDNIA CUDNN.
+- Instaladas con la mayoría de las librerias de deep learning: Tensorflow, pytorch etc.
 - Existen otras soluciones para realizar entrenamientos de los modelos como es Sagemaker.
 - https://aws.amazon.com/es/machine-learning/amis/
 ---
 
 # Public IP
 - Se pierde cuando se apaga la instancia.
-- Usada en subnets publicas
+- Usada en subnets públicas
 - Sin coste.
 - No se puede mover entre instancias. 
 
@@ -234,7 +234,7 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 
 # Private IP
 - Se mantiene cuando la instancia se para.
-- Usada en subnets publicas y privadas.
+- Usada en subnets públicas y privadas.
 
 ---
 

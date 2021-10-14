@@ -16,12 +16,12 @@ img[alt~="center"] {
 ---
 # Overview 
 
-- Lanzada Internamente en 2002.
-- Lanzada Publicamente en 2004.
-- Relaunch with S3 y EC2 en 2006.
+- Lanzada internamente en 2002.
+- Lanzada publicamente en 2004.
+- Relanzado con S3 y EC2 en 2006.
 - Todo amazon.com migrado a AWS en 2010.
-- Revenue 45$ Billion in 2020.
-- Mas de 200 servicios.
+- Beneficio de 45$ Billones en 2020.
+- Más de 200 servicios.
 ---
 
 ![center](imgs/aws_periodic.jpg)
@@ -32,7 +32,7 @@ img[alt~="center"] {
 ![center](imgs/cuadrant.png)
 
 - 48% del segmento del mercado en IaaS.
-- Lider durante más de 10 años.
+- Líder durante más de 10 años.
 
 ---
 
@@ -65,7 +65,7 @@ https://docs.aws.amazon.com/index.html
 - Cada región de Amazon EC2 se ha diseñado para que esté totalmente aislada de las demás regiones de Amazon EC2. Con ello se consigue la mejor tolerancia a errores y estabilidad posibles. 
 - Las zonas de disponibilidad son varias ubicaciones aisladas dentro de cada región.
 - Cuando lanza una instancia o servicio, puede seleccionar una zona de disponibilidad o dejar que se eliga automaticamete.
-- Las regiones entre si estan conectadas con una red de muy alto anche de banda y rebundante.
+- Las regiones entre sí están conectadas con una red de muy alto anche de banda y rebundante.
 - https://aws.amazon.com/es/about-aws/global-infrastructure/
 
 ---
@@ -110,9 +110,9 @@ https://docs.aws.amazon.com/index.html
 ---
 # AWS Identity and Access Management (IAM)
 
-- Con AWS Identity and Access Management (IAM) jestionamos los usuarios y las politicas de acceso en AWS.
+- Con AWS Identity and Access Management (IAM) jestionamos los usuarios y las políticas de acceso en AWS.
 - La cuenta que acabas de crear es la Root Account: AWS recomienda no usarla.
-- Debes crear cuenta para ti y otro usuarios.
+- Debes crear cuenta para ti y otros usuarios.
 
 ---
 
@@ -123,16 +123,16 @@ https://docs.aws.amazon.com/index.html
 
 - IAM User: Representa una persona o service
 - IAM Group: Collecion de usuarios
-- IAM Role: Delegación (usado en servicios, lo vermos más adelante.)
-- Podemos aplicar Policies a Usuarios, grupos o roles donde se especifican los permisos. 
+- IAM Role: Delegación (usado en servicios, lo vermos más adelante)
+- Podemos aplicar Policies a Usuarios, grupos o roles donde se especifican los permisos
 
 
 ---
 
-# Metodos de Autentificación
+# Métodos de Autentificación
 
 
-- Access Key: Compuesta de: access key ID y secret access key. Usadas por ejemplo para AWS CLI o para hacer a AWS en tus programas.
+- Access Key: Compuesta de access key ID y secret access key. Usadas por ejemplo para AWS CLI o para hacer a AWS en tus programas.
 - Password: para acceder para la AWS Management Console.
 
 
@@ -149,7 +149,7 @@ https://docs.aws.amazon.com/index.html
 - Creamos una cuenta en AWS.
 - Añadimos las alarmas de freetier y de coste.
 - Creamos un grupo y un usuario con policy: AdministratorAccess.
-- Obtenemos el csv con: User name,Password,Access key ID,Secret access key,Console login link
+- Obtenemos el csv con: User name,Password, Access key ID, Secret access key, Console login link
 - Nos logeamos en la consola de AWS con este nuevo usuario. 
 ---
 
@@ -165,7 +165,7 @@ https://docs.aws.amazon.com/index.html
 ---
 
 - Podemos tener subnets en diferentes zonas de disponibilidad.
-- Public subnets: tienen dirección IP publica. 
+- Public subnets: tienen dirección IP pública. 
 
 ---
 
@@ -174,7 +174,7 @@ https://docs.aws.amazon.com/index.html
 
 ---
 
-# Servicios publicos y privados
+# Servicios públicos y privados
 
 ![center](imgs/public.png)
 

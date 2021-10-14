@@ -49,17 +49,17 @@ Necesitamos:
 
 ---
 
-# Capa Fisica
+# Capa Física
 - Transformaciones que se le hacen a la secuencia de bits para transmitirlos de un lugar a otro.
 - Los bits se manejan como niveles eléctricos
-- Protocolos Fisicos: Ethernet, Wifi, Bluetooth
+- Protocolos Físicos: Ethernet, Wifi, Bluetooth
 
 
 ![center](imgs/ether.jpg)
 
 ---
 
-Por ejemplo los cables ethernet envían datos a través de una red transmitiendo pulsos de electricidad que representan datos binarios:
+Por ejemplo los cables ethernet envían datos a través de una red, transmitiendo pulsos de electricidad que representan datos binarios:
 
 ![center](imgs/bin.svg)
 
@@ -95,8 +95,8 @@ Por ejemplo los cables ethernet envían datos a través de una red transmitiendo
 
 ---
 
-- Entrega de los paquetes de datos no confiable. 
-- "mejor esfuerzo": lo hará lo mejor posible, pero garantizando poco.
+- Entrega de los paquetes de datos no confiables. 
+- "Mejor esfuerzo": lo hará lo mejor posible, pero garantizando poco.
 - Al no garantizar nada sobre la recepción del paquete, este podría llegar dañado, en otro orden con respecto a otros paquetes, duplicado o simplemente no llegar.
 - Mediante el protocolo IP y una serie de técnicas se busca la mejor ruta para llegar de una máquina a otra. 
 
@@ -116,8 +116,8 @@ Por ejemplo los cables ethernet envían datos a través de una red transmitiendo
 
 ---
 
-- Una dirección IP es un número que identifica de manera lógica y jerárquicamente a una interfaz de un dispositivo (habitualmente una computadora) dentro de una red que utilice el protocolo de Internet (Internet Protocol),
-- Las cabeceras IP contienen las direcciones de las máquinas de origen y destino (direcciones IP), direcciones que serán usadas por los enrutadores (routers) para decidir el tramo de red por el que reenviarán los paquetes. 
+- Una dirección IP es un número que identifica de manera lógica y jerárquicamente a una interfaz de un dispositivo (habitualmente una computadora), dentro de una red que utilice el protocolo de Internet (Internet Protocol),
+- Las cabeceras IP contienen las direcciones de las máquinas de origen y destino (direcciones IP). Direcciones que serán usadas por los enrutadores (routers) para decidir el tramo de red por el que reenviarán los paquetes. 
 - Cada paquete IP contiene tanto un encabezado (de 20 o 24 bytes de longitud) como datos (de longitud variable). 
 - El encabezado incluye las direcciones IP de la fuente y del destino, además de otros campos que ayudan a enrutar el paquete.
 ---
@@ -129,13 +129,13 @@ Por ejemplo los cables ethernet envían datos a través de una red transmitiendo
 - Las direcciones IP son jerárquicas:
 ```79.155.135.7```
 - La primera secuencia de bits identifica la red y los bits al final identifican el nodo individual en la red.
-- Por ejemplo los dos primeros octetos identifican una red administrada por Telefonica ```79.155```. Los dos últimos octetos  identifican ese servidor en esa red ```135.7```.
+- Por ejemplo los dos primeros octetos identifican una red administrada por TelefÓnica ```79.155```. Los dos últimos octetos identifican ese servidor en esa red ```135.7```.
 - https://www.cual-es-mi-ip.net/
 
 ---
 
 - Comando ```ifconfig``` en linux,  ```ipconfig``` en windows.
-- Cada interfaz de red tiene su propia dirección ip.
+- Cada interfaz de red tiene su propia dirección IP.
 ![center](imgs/ifconfig.png)
 
 ---
@@ -204,7 +204,7 @@ Hoy en día se usan dos versiones del Protocolo de Internet:
 
 - Los protocolos de transporte son los encargados de la transferencia libre de errores de los datos entre el emisor y el receptor
 - Protocolos de transporte:
-    - UDP (User Datagram Protocol): no orientado a la conexión, util para audio, video etc. Más rápido.
+    - UDP (User Datagram Protocol): no orientado a la conexión, Útil para audio, video etc. Más rápido.
     - TCP (Transmission Control Protocol): se diseñó específicamente para proporcionar un flujo de bytes confiable de extremo a extremo a través de una interred no confiable.
 
 ---
@@ -292,7 +292,7 @@ En la cabezera UDP tenemos:
 ---
 # HTTP
 - Los servidores web utilizan el protocolo Hypertext Transfer Protocol (HTTP) para solicitar el contenido de la página web en esa dirección IP.
-- HTTP es el leguaje común de internet.
+- HTTP es el leNguaje común de internet.
 - Los componentes básicos de la World Wide Web son clientes y servidores HTTP.
 - HTTP usa el protocolo TCP para transportar sus mensajes.
 - TCP usa IP para las conexiones, direciones IP y Puertos.
@@ -308,8 +308,8 @@ URIs
 - Son como direcciones postales de cada servidor.
 
 URLs
--  Uniform Resource Locator (URL) es el URI más común.
-- Especifica la localización espcica de un recurso en un servidor en concreto.
+- Uniform Resource Locator (URL) es el URI más común.
+- Especifica la localización específica de un recurso en un servidor en concreto.
 - Tiene 3 partes:
     - Esquema: Describe el protocolo usado para comunicarse con el recurso, normalmente el protocolo HTTP (http:// ).
     - Dirección
@@ -318,9 +318,9 @@ URLs
 ---
 
 - Una trasación HTTP consiste en un comando de request (del cliente al servidor) y una respuesta (del servidor al cliente). 
-- Esta comunicación ocurren en bloques formateados llamandos mensajes HTTP.
+- Esta comunicación ocurre en bloques formateados llamados mensajes HTTP.
 - HTTP soporta distintos comandos, llamados  HTTP methods o verbos.
-- Cualquier comunicación HTTP tiene asociada un verbos.
+- Cualquier comunicación HTTP tiene asociada un verbo.
 - El método dice al servidor que acción tiene que realizar.
 
 ---
@@ -395,12 +395,12 @@ HTTP/1.1 200 OK
 
 - La respuesta empieza con el protocolo y la versión, "HTTP/1.1".
 - El siguiente es el código de estado HTTP; y en este caso, es 200. Ese código representa una recuperación exitosa del documento ("OK").
-- Si el servidor no hubiera podido recuperar el documento, los códigos de estado darían más informació
+- Si el servidor no hubiera podido recuperar el documento, los códigos de estado darían más información.
 
 ---
 
-- La siguiente parte de una respuesta HTTP son los encabezados. Le dan al navegador detalles adicionales y lo ayudan al navegador a mostrar el contenido.
-- Estos dos encabezados son comunes en a mayoría de las solicitudes:
+- La siguiente parte de una respuesta HTTP son los encabezados. Le dan al navegador detalles adicionales y lo ayudan a mostrar el contenido.
+- Estos dos encabezados son comunes en la mayoría de las solicitudes:
 
 ```
 Content-Type: text/html; charset=UTF-8
@@ -431,7 +431,7 @@ Paso 5: el navegador muestra la respuesta
 ---
 
 
-- Una página web consiste de multiples HTTP transactions para mostrarse.
+- Una página web consiste en múltiples HTTP transactions para mostrarse.
 
 ![center](imgs/requests_lweb.png)
 
@@ -461,5 +461,5 @@ Paso 5: el navegador muestra la respuesta
 - Caches: guardan copias de contenido popular más cerca de los clientes.
 - Proxies: Itermediarios entre el cliente y el servidor
 ![center](imgs/proxy.bmp)
-- Gateways: Servidores especiales que actuan de intermediarios de otros servidores ( por ejemplo para convertir trafico a otros protocolos)
+- Gateways: Servidores especiales que actuan de intermediarios de otros servidores (por ejemplo para convertir trafico a otros protocolos)
 ![center](imgs/gateway.bmp)

@@ -21,7 +21,7 @@ img[alt~="center"] {
 ## Application Programming Interface: API
 
 - Es un conjunto de subrutinas, funciones y procedimientos (o métodos, en la programación orientada a objetos) que ofrece cierta biblioteca para ser utilizada por otro software como una capa de abstracción.
-- Mediadores entre los usuarios o clientes y los recursos o servicios web que quieren obtener. Con ellas, las empresas pueden compartir recursos e informació
+- Mediadores entre los usuarios o clientes y los recursos o servicios web que quieren obtener. Con ellas, las empresas pueden compartir recursos e información.
 
 ---
 
@@ -100,7 +100,7 @@ veremos el mensaje {"Hello":"FastAPI"}.
 # DEMO
 ---
 
-El comando uvicorn tiene otros parametros:
+El comando uvicorn tiene otros parámetros:
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8080
 ```
@@ -113,7 +113,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8080
     - http://localhost:8000/docs para documentación Swagger.
     - http://localhost:8080/redoc para redoc.
 
-- En http://localhost:8000/openapi.json fastapi nos genera la documentación en el estandard openapi (https://swagger.io/specification/).
+- En http://localhost:8000/openapi.json fastapi nos genera la documentación en el estándar openapi (https://swagger.io/specification/).
 
 ---
 # Operaciones
@@ -198,7 +198,7 @@ x: Dict[str, float] = {'field': 2.0}
 ```json
 {"name": "nombre que mandas"}
 ```
-- Escribe un método GET en el path "/suma" que reciva dos parametros de tipo int y los sume.
+- Escribe un método GET en el path "/suma" que reciba dos parámetros de tipo int y los sume.
 
 ---
 - Ejecuta la aplicación con el comando uvicorn:
@@ -207,9 +207,9 @@ python3.7 -m uvicorn app:app --host 0.0.0.0 --port 8080
 uvicorn app:app --host 0.0.0.0 --port 8080
 ```
 - Visita en un navegador la página web http://0.0.0.0:8080/docs, en windows http://localhost:8080/
-- Si estas en la máquina EC2 puedes pronbarlo con con wget:
+- Si estas en la máquina EC2 puedes probarlo con con wget:
 ```
 wget -q -O- "http://0.0.0.0:8080/echo?name=pepe"
 ```
 - Esta será una de las aplicaciones web que usaremos de aquí en adelante.
-- Puedes probarlo con Podman tambien.
+- Puedes probarlo con Podman también.

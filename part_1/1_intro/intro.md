@@ -16,16 +16,16 @@ img[alt~="center"] {
 
 ---
 
-- La informática en la nube es la distribución de recursos de TI bajo demanda a través de Internet mediante un esquema de pago por uso. 
-- En vez de comprar, poseer y mantener servidores y centros de datos físicos, puede obtener acceso a servicios tecnológicos, como capacidad informática, almacenamiento y bases de datos, en función de sus necesidades a través de un proveedor de la nube como Amazon Web Services (AWS).
+- La informática en la nube es la distribución de recursos de IT bajo demanda a través de Internet, mediante un esquema de pago por uso. 
+- En vez de comprar, poseer y mantener servidores y centros de datos físicos, se puede obtener acceso a servicios tecnológicos; como capacidad informática, almacenamiento y bases de datos, en función de las necesidades a través de un proveedor de la nube como Amazon Web Services (AWS).
 
 ---
 
-- En las proximas clases veremos:
+- En las próximas clases veremos:
   - Herramientas nesarias para desarrollar de una manera más profesional.
-  - Principios basicos de desarrollo.
-  - Principios basicos de Redes.
-  - Principios basicos de DevOps.
+  - Principios básicos de desarrollo.
+  - Principios básicos de Redes.
+  - Principios básicos de DevOps.
   - Amazon Web Services.
   - Desarrollo de visualizaciones interactivas.
   - Desarrollo de páginas web.
@@ -38,15 +38,15 @@ img[alt~="center"] {
   - Una cuenta en Github: https://github.com/
   - Docker: https://www.docker.com/get-started
   - Gitkraken: https://www.gitkraken.com/
-  - Si estas en un ordenador windows GitBash: https://gitforwindows.org/
+  - Si estás en un ordenador Windows GitBash: https://gitforwindows.org/
 
 ---
 
 ## Principios de desarrollo y AWS EC2
 - Introducción a GIT.
-- Conceptos Básicos de Redes.
-- Introdución a AWS.
-- Maquinas Virtuales en AWS: EC2
+- Conceptos básicos de redes.
+- Introducción a AWS.
+- Máquinas Virtuales en AWS: EC2
 - Introducción a la Terminal.
 - Desarrollo en remoto con vscode y SSH.
 
@@ -54,7 +54,7 @@ img[alt~="center"] {
 ## Principios de desarrollo, AWS S3, AWS Lambda. 
 - Python Virtual Enviroments.
 - Cronjobs.
-- Variables de Entorno.
+- Variables de entorno.
 - Desarrollo de APIs en python con Fast API.
 - Despliegue de un API en EC2.
 - Almacenamiento S3.
@@ -65,18 +65,18 @@ img[alt~="center"] {
 ## Docker, AWS ECR, AWS ECS
 
 - Docker
-- Desarrollo desde docker en vscode.
-- Registro de imagenes docker en AWS ECR.
+- Desarrollo desde Docker en vscode.
+- Registro de imágenes Docker en AWS ECR.
 - Funciones Lambda con Docker.
-- Despliege de imagenes docker en AWS EC2.
-- Despliege de imagenes docker en AWS ECS.
-- Despliege de imagenes docker en Amazon Lightsail.
+- Despliege de imágenes Docker en AWS EC2.
+- Despliege de imágenes Docker en AWS ECS.
+- Despliege de imágenes Docker en Amazon Lightsail.
 - Kubernetes.
 
 ---
 
 ## DevOps, AWS RDS, AWS Dynamo, Sagemaker
-- Filosofia Devops.
+- Filosofía Devops.
 - Acciones de Github.
 - Ejemplo DevOps AWS Lambda.
 - Ejemplo DevOps AWS EC2 y ECR.
@@ -91,8 +91,8 @@ img[alt~="center"] {
 - Introducción a HTML
 - Introducción a CSS
 - Introducción a Flask
-- Graficos Interactivos con Plotly
-- Interfaces Interactivas con Dash
+- Gráficos interactivos con Plotly
+- Interfaces interactivas con Dash
 - Despliege de aplicación web en AWS, Google Cloud y Azure.
 
 ### Proyecto final

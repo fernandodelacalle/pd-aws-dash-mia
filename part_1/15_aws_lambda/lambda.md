@@ -27,7 +27,7 @@ img[alt~="center"] {
 
 ---
 
-Lenguajes Admitidos:
+Lenguajes admitidos:
 - https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-runtimes.html
 
 ---
@@ -64,7 +64,7 @@ Lenguajes Admitidos:
 ---
 
 # Casos de uso
-- Datos y análisis: Podemos cargar datos, por ejemplo en un csv, en un bucket de s3 y que cuando esto ocurra la función lamnda lo pocese y lo envie a otro bucket.
+- Datos y análisis: Podemos cargar datos, por ejemplo en un csv, en un bucket de s3 y que cuando esto ocurra la función lamnda lo procese y lo envíe a otro bucket.
 - Sitios web: Permite alojar la lógica del backend en Lambda. Puede invocar la función de Lambda a través de HTTP utilizando Amazon API Gateway como punto de enlace HTTP. A continuación, el cliente web puede invocar la API y, por último, API Gateway puede dirigir la solicitud a Lambda. 
 - Procesos Periodicos: Podemos ejecutar un código frecuentemente, definiendo cuando con una expresión cron usando EventBridge.
 
@@ -88,7 +88,7 @@ Un desencadenador es un recurso o configuración que invoca una función de Lamb
 - Un evento es un documento con formato JSON que contiene datos para que una función de Lambda los procese. 
 - En tiempo de ejecución convierte el evento en un objeto y lo pasa al código de la función. 
 - Cuando se invoca una función, se determina la estructura y el contenido del evento. 
-- Para ver la estructura de los Eventos de los distintos servicios de aws que pueden desencadenar la función lamnda: https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html
+- Para ver la estructura de los eventos de los distintos servicios de aws que pueden desencadenar la función lamnda: https://docs.aws.amazon.com/es_es/lambda/latest/dg/lambda-services.html
 
 ---
 
@@ -118,14 +118,14 @@ Lambda admite dos tipos de implementaciones:
 # Invocar la función de Lambda
 
 - Después de seleccionar la función, elija la pestaña Prueba.
-- En la sección Evento de prueba, elija Nuevo evento. En Plantilla, deje la opción predeterminada hello-world. Introduzca un nombre para esta prueba y tenga en cuenta la siguiente plantilla de evento de ejemplo: 
+- En la sección evento de prueba, elija Nuevo evento. En Plantilla, deje la opción predeterminada hello-world. Introduzca un nombre para esta prueba y tenga en cuenta la siguiente plantilla de evento de ejemplo: 
 - Elija Save changes (Guardar cambios) y después Test (Probar). Cada usuario puede crear hasta 10 eventos de prueba por función. Dichos eventos de prueba no están disponibles para otros usuarios.
 - Lambda ejecuta la función en su nombre. El controlador de funciones recibe y procesa el evento de muestra. 
 
 ---
 
 Si se realiza correctamente, puede ver los resultados en la consola.
-- El resultado de ejecución muestra el estado de ejecución correctamente. Para ver los resultados de ejecución de la función, expanda Detalles. Tenga en cuenta que el enlace de los logs (registros) abre la página de Log groups (Grupos de registro) en la consola de CloudWatch.
+- El resultado de ejecución muestra el estado de ejecución correctamente. Para ver los resultados de ejecución de la función, expanda detalles. Tenga en cuenta que el enlace de los logs (registros) abre la página de Log groups (Grupos de registro) en la consola de CloudWatch.
 - La sección Summary (Resumen) muestra la información principal proporcionada en la sección Log output (Resultado del registro) (la línea REPORT del registro de ejecución).
 - La sección de Log output (Salida de registro) muestra el registro que Lambda genera para cada invocación. La función escribe estos registros en CloudWatch. La consola de Lambda muestra estos registros para su comodidad. Elija Click here (Haga clic aquí) para agregar registros al grupo de registros de CloudWatch y abra la página Log groups (Grupos de registro) en la consola CloudWatch.
 
@@ -143,8 +143,8 @@ Si se realiza correctamente, puede ver los resultados en la consola.
 
 # Ejercicio
 
-- Cree una funcion lamnda por defecto.
-- Modifique el código en la consola de aws para que mueste la fecha en la que se ejecuto, y realice un print de event y context
+- Cree una función lambda por defecto.
+- Modifique el código en la consola de aws para que mueste la fecha en la que se ejecutó, y realice un print de event y context.
 - Prueba la función con el test por defecto.
 - Observe el resultado.
 
@@ -245,7 +245,7 @@ def lambda_handler(event, context):
 - El código de la función AWS Lambda se compone de scripts o programas compilados y sus dependencias. Lambda admite dos tipos de paquetes de implementación: imágenes de contenedor y archivos .zip. 
 
 - El archivo.zip contiene el código de su función y cualquier dependencia utilizada para ejecutar el código de su función (si corresponde) en Lambda.
--  Si su función depende solo de bibliotecas estándar o bibliotecas SDK AWS, no necesita incluir estas bibliotecas en su archivo.zip. 
+- Si su función depende solo de bibliotecas estándar o bibliotecas SDK AWS, no necesita incluir estas bibliotecas en su archivo.zip. 
 - Si el archivo .zip tiene más de 50 MB, es necesario cargarlo desde un bucket Amazon Simple Storage Service (AmazonS3). 
 
 ---
@@ -256,19 +256,19 @@ def lambda_handler(event, context):
 ```bash
 mkdir my-math-function
 ```
-- Desplácese hasta el directorio del proyecto:
+- Desplácate hasta el directorio del proyecto:
 ```bash
 cd my-function
 ```
 
 ---
 
-- Copie el contenido del código Python de ejemplo y guárdelo en un nuevo archivo llamado lambda_function.py. La estructura de directorios debería ser similar a la siguiente:
+- Copia el contenido del código Python de ejemplo y guárdalo en un nuevo archivo llamado lambda_function.py. La estructura de directorios debería ser similar a la siguiente:
 ```bash
 my-function$
 | lambda_function.py
 ```
-- Agregue el archivo lambda_function.py a la raíz del archivo.zip.
+- Agrega el archivo lambda_function.py a la raíz del archivo.zip.
 ```bash
 zip my-deployment-package.zip lambda_function.py
 ```
@@ -293,12 +293,12 @@ source myvenv/bin/activate
 ```
 ---
 
-- Instale las bibliotecas con pip.
+- Instala las bibliotecas con pip.
 ```bash
 (myvenv) ~/my-function$ pip install pandas
 ```
 
-- Desactive el entorno virtual.
+- Desactiva el entorno virtual.
 ```bash
 (myvenv) ~/my-function$ deactivate
 ```
@@ -313,17 +313,17 @@ zip -r ../../../../my-deployment-package.zip .
 
 - El último comando guarda el paquete de implementación en la raíz del directorio my-function.
 
-- Una biblioteca puede aparecer en site-packages o dist-packages y la primera carpeta lib o lib64. Puede utilizar el comando pip show para localizar un paquete específico.
+- Una biblioteca puede aparecer en site-packages o dist-packages y la primera carpeta lib o lib64. Puedes utilizar el comando pip show para localizar un paquete específico.
 
 ---
 
-- Agregue archivos de código de función a la raíz del paquete.
+- Agrega archivos de código de función a la raíz del paquete.
 ```bash
 ~/my-function/myvenv/lib/python3.8/site-packages$ cd ../../../../
 ~/my-function$ zip -g my-deployment-package.zip lambda_function.py
 ```
 
-- Cuando realice este paso, tendrá la siguiente estructura de directorio:
+- Cuando realices este paso, tendrás la siguiente estructura de directorio:
 ```bash
 my-deployment-package.zip$
   │ lambda_function.py
@@ -341,8 +341,8 @@ my-deployment-package.zip$
 
 # Desplegar el archivo .zip en la función
 
-- Para desplegar el nuevo código en la función, cargue el nuevo paquete  del archivo .zip. Puede utilizar la consola de Lambda para cargar un archivo .zip, el comando de la CLI UpdateFunctionCode o la extension de vscode.
-- El siguiente ejemplo carga un archivo denominado my-deployment-package.zip. Utilice el prefijo de archivo fileb:// para cargar el archivo .zip binario a Lambda. 
+- Para desplegar el nuevo código en la función, carga el nuevo paquete  del archivo .zip. Puedes utilizar la consola de Lambda para cargar un archivo .zip, el comando de la CLI UpdateFunctionCode o la extension de vscode.
+- El siguiente ejemplo carga un archivo denominado my-deployment-package.zip. Utiliza el prefijo de archivo fileb:// para cargar el archivo .zip binario a Lambda. 
 
 ```bash
 aws lambda update-function-code --function-name MyLambdaFunction --zip-file fileb://my-deployment-package.zip
@@ -350,7 +350,7 @@ aws lambda update-function-code --function-name MyLambdaFunction --zip-file file
 
 ---
 
-- Tambien puede subrilo a un bucket de s3
+- También puedes subrilo a un bucket de s3
 ```bash
 aws s3 mb s3://lambdastuffmiax
 aws s3 mv my-deployment-package.zip s3://lambdastuffmiax
@@ -372,17 +372,17 @@ aws lambda update-function-code --function-name MyLambdaFunction --zip-file s3:/
 
 # Variables de entorno
 
-- Desde la interfaz de lambda podemos añadir variables de entrono que estarn disponible en tiempo de ejecución.
+- Desde la interfaz de lambda podemos añadir variables de entorno que estarán disponibles en tiempo de ejecución.
 
 ---
 
-# Practicas Recomendadas
+# Prácticas Recomendadas
 
 
-- Separe el controlador de Lambda de la lógica del núcleo. 
-- Utilice variables de entorno para pasar parámetros operativos a su función: Por ejemplo, si está escribiendo en un bucket de Amazon S3, en lugar de codificar de forma rígida el nombre del bucket, configúrelo como una variable de entorno. 
-- Minimice el tamaño del paquete de implementación de acuerdo con las necesidades de su tiempo de ejecución. 
-- Reutilice el entorno de ejecución para mejorar el rendimiento de la función. Inicialice los clientes de SDK y las conexiones de base de datos fuera del controlador de funciones 
+- Separa el controlador de Lambda de la lógica del núcleo. 
+- Utiliza variables de entorno para pasar parámetros operativos a su función: Por ejemplo, si estás escribiendo en un bucket de Amazon S3, en lugar de codificar de forma rígida el nombre del bucket, configúralo como una variable de entorno. 
+- Minimiza el tamaño del paquete de implementación de acuerdo con las necesidades de su tiempo de ejecución. 
+- Reutiliza el entorno de ejecución para mejorar el rendimiento de la función. Inicializa los clientes de SDK y las conexiones de base de datos fuera del controlador de funciones 
 
 ---
 
@@ -626,7 +626,7 @@ Realice todos estos pasos desde su instancia EC2 conectada a Visual Studio Code.
 - Cree una nueva carpeta
 - Cree una nueva función que use la libreria pandas.
 - Cree el paquete .zip
-- Suba el fichero a un bucket de s3. Para ello cree un nuevo bucket, puedes hacerlo con cualquiera de las herramientas vistas.
+- Suba el fichero a un bucket de s3. Para ello cree un nuevo bucket, puede hacerlo con cualquiera de las herramientas vistas.
 - Cree la función desde la interfaz de aws.
 - Prueba la función desde la consola de aws.
 
@@ -636,14 +636,14 @@ Realice todos estos pasos desde su instancia EC2 conectada a Visual Studio Code.
 
 - Cree una función que se conecte a la API de los algoritmos de BME y descarge los datos del Santander.
 - Empaquete todas las librerías que necesite usar usando un virtual enviroment.
-- El api key tendra que estar en una variable de entorno.
+- El api key tendrá que estar en una variable de entorno.
 - Una vez probada la función modifiquela para que guarde un csv en un bucket de s3 con los datos. El nombre del fichero tendra el formato: Santander_{HH_MM_SS_DD_MM_YYYY}.csv
 
 ---
 
 # Ejercicio
 
-- Cree una función lamnda que se ejecute cuando un nuevo fichero se suba a un bucket s3. Para ello es necesario que cree un nuevo bucket.
+- Cree una función lambda que se ejecute cuando un nuevo fichero se suba a un bucket s3. Para ello es necesario que cree un nuevo bucket.
 - La función tendrá que leer el fichero y procesarlo. Subiremos el  ficheros de prueba marketdata.csv
 - La función tendrá que procesar el fichero para que la salida sea otro fichero csv. Partiremos de la estructura original:
 ```bash
@@ -675,8 +675,8 @@ df = pd.read_csv(
 ----
 
 # Ejercicio
-- En este ejercicio vamos a crear un método get de un API usando lamnda y API Gateway.
-- El método recive dos parametros a y b y realizara su suma.
-- Para ello el trigger de la función sera http y usaremos API Gateway para exponer el API a internet.
+- En este ejercicio vamos a crear un método get de un API usando lambda y API Gateway.
+- El método recibe dos parámetros a y b y realizará su suma.
+- Para ello el trigger de la función será http y usaremos API Gateway para exponer el API a internet.
 
 
