@@ -1,1 +1,0 @@
-https://www.annageller.com/posts/how-to-deploy-aws-lambda-with-docker-containers

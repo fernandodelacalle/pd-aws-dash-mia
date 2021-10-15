@@ -1,5 +1,0 @@
-matplotlib
-jupyterlab
-pytest
-pytest-cov
-flake8
