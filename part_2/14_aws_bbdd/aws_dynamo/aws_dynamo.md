@@ -17,7 +17,7 @@ img[alt~="center"] {
 
 - Amazon DynamoDB es un servicio de base de datos NoSQL totalmente administrado que ofrece un rendimiento rápido y predecible, así como una perfecta escalabilidad.
 - Muy sencillo de utilizar usando python.
-
+- https://docs.aws.amazon.com/es_es/dynamodb/index.html
 ---
 
 
@@ -117,6 +117,8 @@ response = table.put_item(
 )
 
 ```
+
+---
 
 ## Lectura de un elemento
 

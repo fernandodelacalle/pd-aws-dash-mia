@@ -36,7 +36,7 @@ img[alt~="center"] {
 # Ejemplo
 - Pulsar el boton verde: 
 ![center](imgs/2.png)
-- Seleccionar la opción open in remote container.
+- Seleccionar la opción: open in remote container.
 ![center](imgs/3.png)
 
 ---
