@@ -69,14 +69,11 @@ img[alt~="center"] {
 
 ---
 
+# DEMO
+---
 
 # Docs
 - https://docs.aws.amazon.com/es_es/sagemaker/latest/dg/gs.html
 - https://sagemaker-examples.readthedocs.io/en/latest/index.html
-
-- K-nn: https://docs.aws.amazon.com/es_es/sagemaker/latest/dg/k-nearest-neighbors.html
-
----
-
-# DEMO
+- k-nn: https://docs.aws.amazon.com/es_es/sagemaker/latest/dg/k-nearest-neighbors.html
 

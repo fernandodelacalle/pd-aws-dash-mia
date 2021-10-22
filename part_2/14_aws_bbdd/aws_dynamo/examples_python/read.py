@@ -1,25 +1,13 @@
-
 import boto3
 from botocore.exceptions import ClientError
 
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('Movies')
 
-def get_movie(title, year, dynamodb=None):
-    if not dynamodb:
-        dynamodb = boto3.resource(
-            'dynamodb')
+try:
+    response = table.get_item(Key={'year': 2015, 'title': "The Big New Movie"})
+except ClientError as e:
+    print(e.response['Error']['Message'])
 
-    table = dynamodb.Table('Movies')
+print(response['Item'])
 
-    try:
-        response = table.get_item(Key={'year': year, 'title': title})
-    except ClientError as e:
-        print(e.response['Error']['Message'])
-    else:
-        return response['Item']
-
-
-if __name__ == '__main__':
-    movie = get_movie("The Big New Movie", 2015,)
-    if movie:
-        print("Get movie succeeded:")
-        print(movie)
