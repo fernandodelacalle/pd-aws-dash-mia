@@ -59,5 +59,5 @@
 # Otros
 - Para convertir las diapositivas de md a pdf usar el comando:
 ```bash
-docker run --rm --init -v $PWD:/home/marp/app/ -e LANG=$LANG marpteam/marp-cli nombre_fichero.md  --pdf --allow-local-files
+docker run --rm --init -v $PWD:/home/marp/app/ -e LANG=$LANG marpteam/marp-cli **/*.md  --pdf --allow-local-files
 ```

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: dash
+  name: dash
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dash
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: dash
+    spec:
+      containers:
+      - image: gcr.io/project/image:tag
+        name: my-first-api
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "500Mi"
+            cpu: "1"
