@@ -2,7 +2,7 @@
 marp: true
 theme: default
 paginate: true
-class: invert
+
 ---
 
 # Introducción a HTML
