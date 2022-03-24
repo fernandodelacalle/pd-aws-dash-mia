@@ -64,6 +64,11 @@ Para crear un virtual enviroment hacemos lo siguiente:
 ```
 python3 -m venv venv
 ```
+en windows con anaconda:
+```
+py -m venv venv
+```
+
 - Se crea una carpeta con el nombre venv en el directorio donde nos encontremos.
 - El segundo venv es el nombre de la carpeta donde se van a guardar las librerías.
 - Podemos ponerle otro nombre:
@@ -76,6 +81,11 @@ python3 -m venv mivenv
 ```
 source venv/bin/activate
 ```
+en windows con anaconda:
+```
+source venv/Scripts/activate
+```
+Este paso no es necesario si configuramos correctamente vscode.
 
 3. Aparecerá: (tutorial-env) a la izquierda. Esto nos indica que tenemos ese virtual enviroment activado.
 4. Instalar las librerías necesarias en el virtual enviroment
