@@ -265,3 +265,71 @@ Amazon EC2 proporciona las siguientes opciones de compra de instancias:
 - Guarda el fichero .pem (lo usaremos despues).
 - Conectate mediante la consola de aws a la instacia.
 
+---
+
+## Conexion SSH.
+- Podemos conectarnos con otra máquina mediante el protocolo SSH.
+- Para conectarnos a la máquina EC2 hacemos lo siguiente:
+
+```bash
+ssh -i "test.pem" ec2-user@DIR
+```
+Donde:
+- "test.pem" es el fichero de clave que se descargo al crear la máquina.
+-  ec2-user@DIR es la dirección de la máquina.
+
+La conexión se puede cerrar con ```ctrl + x``` o el comando ```exit```
+
+---
+
+- Este comando lo puedes encontrar en la consola de aws:
+![center](imgs/ssh1.png)
+
+---
+![center](imgs/ssh2.png)
+
+---
+
+
+- Si va a usar un cliente SSH en un equipo macOS o Linux para conectarse a su instancia de Linux, utilice el comando que se indica a continuación para establecer los permisos de su archivo de clave privada de manera que solo usted pueda leerlo. 
+```bash
+chmod 400 my-key-pair.pem
+```
+
+Más info en:
+https://stackabuse.com/how-to-fix-warning-unprotected-private-key-file-on-mac-and-linux/
+
+---
+
+Si Aparece el error: WARNING: UNPROTECTED PRIVATE KEY FILE! 
+Para solventarlo hacer:
+```bash
+sudo chmod 600 my-key-pair.pem
+```
+---
+
+## Trasferencia de archivos con SCP.
+- Podemos transferir ficheros de nuestra máquina a la máquina EC2 con el comando SCP:
+```bash
+scp -i test.pem ./source/test.txt ec2-user@DIR:~/destination/
+```
+
+- También de la máquina EC2 a nuestra máquina:
+```bash
+scp -i test.pem ec2-user@DIR:~/source/of/remote/test.txt ./where/to/put
+```
+
+---
+
+# Ejercicio
+
+- Conectate a la máquina EC2 mediante SSH.
+- Instala la utilidad htop
+- Ejecuta el comando htop
+
+---
+
+# Ejercicio
+- Transfiere el fichero market_data.txt de tu ordenador a la máquina de EC2.
+- Modificalo en la máquina de EC2 y traelo de vuelta.
+Nota: usa el comando scp.

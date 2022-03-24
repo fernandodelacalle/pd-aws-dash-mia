@@ -136,7 +136,7 @@ __pycache__
 ## Ejercicio
 
 - Crea un repositorio nuevo en github.
-- Desde el vscode de tu máquina EC2 clona el repo.
+- Desde el vscode de tu máquina clona el repo.
 - Abre el repo en vscode (file -> open folder)
 - Crea un nuevo virtual enviroment.
 - Configura la extensión de python.

@@ -13,6 +13,7 @@
 - Kubernetes.
 
 ---
+
 ## 3. AWS EC2
 - Introducción a AWS.
 - Máquinas Virtuales en AWS: EC2
@@ -49,7 +50,6 @@
 - Bases de Datos Relacionales en AWS: RDS
 - AWS Athenea
 - Bases de Datos Relacionales en AWS: Dynamo
-
 
 ## 9. Machine Learing y MLOps: AWS Sagemaker
 - Introducción a AWS SageMaker.
